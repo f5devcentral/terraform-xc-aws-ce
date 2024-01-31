@@ -2,18 +2,11 @@
 
 Terraform templates to create F5XC AWS cloud CE.
 
-### Topologies
-
-| Name                                    | Description                                                                  |
-|-----------------------------------------|------------------------------------------------------------------------------|
-| Single Node Single NIC new VPC / subnet | [Description](/examples/single_node_single_nic_new_vpc_new_subnet/readme.md) |
-| Single Node Multi NIC new VPC / subnet  |                                                                              |
-
 ## Requirements
 
-| Name                                                                                     | Version  |
-|------------------------------------------------------------------------------------------|----------|
-| <a name="requirement_terraform"></a> [terraform](https://github.com/hashicorp/terraform) | >= 1.3.0 |
+| Name                                                                                     | Version   |
+|------------------------------------------------------------------------------------------|-----------|
+| <a name="requirement_terraform"></a> [terraform](https://github.com/hashicorp/terraform) | \>= 1.3.0 |
 
 ## Installation
 
@@ -32,6 +25,13 @@ Terraform templates to create F5XC AWS cloud CE.
 - Several example directories are available. Change to the example directory that is to be deployed
   with `cd examples/<example_dir_name>`
 - Follow usage instruction in examples readme file `cd examples/<example_dir_name>/README.md`
+
+## Topologies
+
+| Name                                    | Description                                                                 |
+|-----------------------------------------|-----------------------------------------------------------------------------|
+| Single Node Single NIC new VPC / subnet | [Description](examples/single_node_single_nic_new_vpc_new_subnet/README.md) |
+| Single Node Multi NIC new VPC / subnet  |                                                                             |
 
 ## Support
 
