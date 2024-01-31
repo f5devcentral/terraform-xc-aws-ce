@@ -1,4 +1,4 @@
-owner                         = "c.klewar@f5.com" # "owner_email_address"
+owner                         = "owner_email_address"
 project_prefix                = "f5xc"
 project_suffix                = "01"
 aws_vpc_cidr_block            = "192.168.0.0/22"
