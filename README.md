@@ -1,32 +1,35 @@
-# Solutions Engineering Template Repository
-
-A template repository that contains all required files (LICENSE, SUPPORT, CONTRIBUTING, etc) as outlined in the org standards.  
-
-The sections below are recommended in your project's README.md file.
-
 ## Overview
 
-Provide a short overview of the project.
+Terraform templates to create F5XC AWS cloud CE.
 
-## Getting Started
+## Requirements
 
-Provide a quick example of how to use your code.  This should provide the user with a launch point to quickly see what the project can offer them.
+| Name                                                                                     | Version  |
+|------------------------------------------------------------------------------------------|----------|
+| <a name="requirement_terraform"></a> [terraform](https://github.com/hashicorp/terraform) | >= 1.3.0 |
 
 ## Installation
 
-Outline the requirements and steps to install this project.
+- Git binary (https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- Terraform binary (https://developer.hashicorp.com/terraform/install?product_intent=terraform)
+- F5 XC Credentials (https://docs.cloud.f5.com/docs/how-to/user-mgmt/credentials)
+    * API Certificate
+    * API Token
+- SSH public key
+    * ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 ## Usage
 
-Outline how the user can use your project and the various features the project offers.
-
-## Development
-
-Outline any requirements to setup a development environment if someone would like to contribute.  You may also link to another file for this information.
+- Clone this repo with: `git clone --recurse-submodules https://github.com/f5devcentral/f5-xc-aws-ce`
+- Enter repository directory with: `cd f5-xc-aws-ce`
+- Several example directories are available. Change to the example directory that is to be deployed
+  with `cd examples/<example_dir_name>`
+- Follow usage instruction in examples readme file `cd examples/<example_dir_name>/README.md`
 
 ## Support
 
-For support, please open a GitHub issue.  Note, the code in this repository is community supported and is not supported by F5 Networks.  For a complete list of supported projects please reference [SUPPORT.md](SUPPORT.md).
+For support, please open a GitHub issue. Note, the code in this repository is community supported and is not supported
+by F5 Networks. For a complete list of supported projects please reference [SUPPORT.md](SUPPORT.md).
 
 ## Community Code of Conduct
 
@@ -42,12 +45,18 @@ Copyright 2014-2020 F5 Networks Inc.
 
 ### F5 Networks Contributor License Agreement
 
-Before you start contributing to any project sponsored by F5 Networks, Inc. (F5) on GitHub, you will need to sign a Contributor License Agreement (CLA).
+Before you start contributing to any project sponsored by F5 Networks, Inc. (F5) on GitHub, you will need to sign a
+Contributor License Agreement (CLA).
 
-If you are signing as an individual, we recommend that you talk to your employer (if applicable) before signing the CLA since some employment agreements may have restrictions on your contributions to other projects.
+If you are signing as an individual, we recommend that you talk to your employer (if applicable) before signing the CLA
+since some employment agreements may have restrictions on your contributions to other projects.
 Otherwise by submitting a CLA you represent that you are legally entitled to grant the licenses recited therein.
 
-If your employer has rights to intellectual property that you create, such as your contributions, you represent that you have received permission to make contributions on behalf of that employer, that your employer has waived such rights for your contributions, or that your employer has executed a separate CLA with F5.
+If your employer has rights to intellectual property that you create, such as your contributions, you represent that you
+have received permission to make contributions on behalf of that employer, that your employer has waived such rights for
+your contributions, or that your employer has executed a separate CLA with F5.
 
-If you are signing on behalf of a company, you represent that you are legally entitled to grant the license recited therein.
-You represent further that each employee of the entity that submits contributions is authorized to submit such contributions on behalf of the entity pursuant to the CLA.
+If you are signing on behalf of a company, you represent that you are legally entitled to grant the license recited
+therein.
+You represent further that each employee of the entity that submits contributions is authorized to submit such
+contributions on behalf of the entity pursuant to the CLA.
