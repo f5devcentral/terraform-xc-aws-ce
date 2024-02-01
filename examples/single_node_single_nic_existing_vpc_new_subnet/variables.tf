@@ -53,13 +53,9 @@ variable "owner" {
   type        = string
 }
 
-variable "aws_vpc_cidr_block" {
-  description = "AWS VPC CIDR block"
-  type        = string
-}
-
 variable "aws_existing_vpc_id" {
-  type = string
+  description = "The ID of an already existing AWS VPC"
+  type        = string
 }
 
 variable "f5xc_aws_vpc_slo_subnet_node0" {

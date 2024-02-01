@@ -89,7 +89,8 @@ variable "f5xc_cluster_latitude" {
 }
 
 variable "aws_existing_vpc_id" {
-  type = string
+  description = "The ID of an already existing AWS VPC"
+  type        = string
 }
 
 variable "f5xc_cluster_longitude" {

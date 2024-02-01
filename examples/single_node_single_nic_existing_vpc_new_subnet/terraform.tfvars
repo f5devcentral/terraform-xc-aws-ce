@@ -1,7 +1,6 @@
 owner                         = "owner_email_address"
 project_prefix                = "f5xc"
 project_suffix                = "01"
-aws_vpc_cidr_block            = "192.168.0.0/22"
 aws_existing_vpc_id           = ""
 f5xc_tenant                   = "f5 xc tenant name"
 f5xc_api_url                  = "f5 xc api url"
