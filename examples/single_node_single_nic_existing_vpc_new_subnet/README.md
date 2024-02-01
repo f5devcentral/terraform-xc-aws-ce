@@ -1,12 +1,11 @@
-# Example Single node single NIC new VPC new subnet
+# Example Single node single NIC existing VPC new subnet
 
 This example instantiates:
 
 - Single node CE cluster
 - AWS SLO interface
-- AWS VPC
 - AWS SLO interface subnet
-- AWS route tables
+- AWS route table
 - AWS Internet Gateway
 - Assign AWS EIP to SLO
 

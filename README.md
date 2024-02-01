@@ -24,14 +24,16 @@ Terraform templates to create F5XC AWS cloud CE.
 - Enter repository directory with: `cd f5-xc-aws-ce`
 - Several example directories are available. Change to the example directory that is to be deployed
   with `cd examples/<example_dir_name>`
-- Follow usage instruction in examples readme file `cd examples/<example_dir_name>/README.md`
+- Follow usage description in __topologies__ section
 
 ## Topologies
 
-| Name                                    | Description                                                                 |
-|-----------------------------------------|-----------------------------------------------------------------------------|
-| Single Node Single NIC new VPC / subnet | [Description](examples/single_node_single_nic_new_vpc_new_subnet/README.md) |
-| Single Node Multi NIC new VPC / subnet  |                                                                             |
+| Name                                             | Description                                                                       |
+|--------------------------------------------------|-----------------------------------------------------------------------------------|
+| Single Node Single NIC new VPC / subnet          | [Description](examples/single_node_single_nic_new_vpc_new_subnet/README.md)       |
+| Single Node Multi NIC new VPC / subnet           | [Description](examples/single_node_multi_nic_new_vpc_new_subnet/README.md)        |
+| Single Node Single NIC Existing VPC / new subnet | [Description](examples/single_node_single_nic_existing_vpc_new_subnet/README.md)  |
+| Three Node Cluster Multi NIC new VPC / subnet    | [Description](examples/three_node_cluster_multi_nic_new_vpc_new_subnet/README.md) |
 
 ## Support
 
