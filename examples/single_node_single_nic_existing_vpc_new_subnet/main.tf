@@ -21,7 +21,6 @@ module "f5xc_aws_cloud_ce_single_node_single_nic_existing_vpc_new_subnet" {
   f5xc_token_name       = format("%s-%s-%s", var.project_prefix, var.f5xc_cluster_name, var.project_suffix)
   f5xc_cluster_name     = format("%s-%s-%s", var.project_prefix, var.f5xc_cluster_name, var.project_suffix)
   f5xc_cluster_labels   = {}
-  aws_existing_vpc_id   = ""
   f5xc_aws_vpc_az_nodes = {
     node0 = {
       f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_node0
@@ -31,7 +30,7 @@ module "f5xc_aws_cloud_ce_single_node_single_nic_existing_vpc_new_subnet" {
   f5xc_ce_gateway_type                 = var.f5xc_ce_gateway_type
   f5xc_cluster_latitude                = var.f5xc_cluster_latitude
   f5xc_cluster_longitude               = var.f5xc_cluster_longitude
-  aws_vpc_cidr_block                   = var.aws_vpc_cidr_block
+  aws_existing_vpc_id                  = var.aws_existing_vpc_id
   aws_security_group_rules_slo_egress  = []
   aws_security_group_rules_slo_ingress = []
   ssh_public_key                       = file(var.ssh_public_key_file)
