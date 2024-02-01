@@ -78,6 +78,15 @@ variable "f5xc_cluster_longitude" {
   type        = string
 }
 
+variable "aws_existing_slo_subnet_id" {
+  description = "F5 XC SLO - AWS Subnet ID"
+  type        = string
+}
+
+variable "aws_existing_sli_subnet_id" {
+  description = "F5 XC SLI - AWS Subnet ID"
+  type        = string
+}
 
 variable "ssh_public_key_file" {
   description = "path to ssh public key file"

@@ -31,6 +31,8 @@ module "f5xc_aws_cloud_ce_single_node_single_nic_existing_vpc_new_subnet" {
   f5xc_cluster_latitude                = var.f5xc_cluster_latitude
   f5xc_cluster_longitude               = var.f5xc_cluster_longitude
   aws_existing_vpc_id                  = var.aws_existing_vpc_id
+  aws_existing_slo_subnet_id           = var.aws_existing_slo_subnet_id
+  aws_existing_sli_subnet_id           = var.aws_existing_sli_subnet_id
   aws_security_group_rules_slo_egress  = []
   aws_security_group_rules_slo_ingress = []
   ssh_public_key                       = file(var.ssh_public_key_file)
