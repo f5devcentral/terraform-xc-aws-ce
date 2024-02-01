@@ -10,8 +10,8 @@ Terraform templates to create F5XC AWS cloud CE.
 
 ## Installation
 
-- Git binary (https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- Terraform binary (https://developer.hashicorp.com/terraform/install?product_intent=terraform)
+- Git (https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- Terraform (https://developer.hashicorp.com/terraform/install?product_intent=terraform)
 - F5 XC Credentials (https://docs.cloud.f5.com/docs/how-to/user-mgmt/credentials)
     * API Certificate
     * API Token
@@ -20,11 +20,11 @@ Terraform templates to create F5XC AWS cloud CE.
 
 ## Usage
 
-- Clone this repo with: `git clone --recurse-submodules https://github.com/f5devcentral/f5-xc-aws-ce`
-- Enter repository directory with: `cd f5-xc-aws-ce`
-- Several example directories are available. Change to the example directory that is to be deployed
-  with `cd examples/<example_dir_name>`
+- Clone this repo with: `git clone --recurse-submodules https://github.com/f5devcentral/terraform-xc-aws-ce`
+- Enter repository directory with: `cd terraform-xc-aws-ce`
 - Follow usage description in __topologies__ section
+- Multiple examples in example directory are available. Change to example directory that is to be deployed
+  with `cd examples/<example_dir_name>`
 
 ## Topologies
 
