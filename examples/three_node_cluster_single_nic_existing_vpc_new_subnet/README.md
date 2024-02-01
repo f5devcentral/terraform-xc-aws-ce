@@ -1,17 +1,15 @@
-# Example three node ce cluster with multi nic and new VPC and new subnet
+# Example three node ce cluster with single nic and existing VPC and new subnet
 
 This example instantiates:
 
 - Three node CE cluster
-- SLO and SLI interface
-- AWS VPC
-- SLO interface subnet
-- SLI interface subnet
+- AWS SLO and SLI interface
+- AWS SLO interface subnet
 - AWS route tables
 - AWS Internet Gateway
 - AWS Loadbalancer
 - Assign AWS EIP to SLO
-- Nodes in different aws availability zones
+- Cluster nodes in different aws availability zones
 
 # Usage
 

@@ -1,4 +1,4 @@
-# Example three node ce cluster with multi nic and new VPC and new subnet
+# Example three node ce cluster with multi nic and existing VPC and new subnet
 
 This example instantiates:
 
