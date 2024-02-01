@@ -38,8 +38,18 @@ variable "f5xc_aws_region" {
   type        = string
 }
 
-variable "f5xc_aws_availability_zone" {
-  description = "AWS availability zone name"
+variable "f5xc_aws_availability_zone_node0" {
+  description = "AWS availability zone name node0"
+  type        = string
+}
+
+variable "f5xc_aws_availability_zone_node1" {
+  description = "AWS availability zone name node1"
+  type        = string
+}
+
+variable "f5xc_aws_availability_zone_node2" {
+  description = "AWS availability zone name node2"
   type        = string
 }
 
@@ -53,13 +63,18 @@ variable "owner" {
   type        = string
 }
 
-variable "aws_existing_vpc_id" {
-  description = "The ID of an already existing AWS VPC"
+variable "f5xc_aws_vpc_slo_subnet_node0" {
+  description = "F5 XC CE node0 SLO interface subnet prefix"
   type        = string
 }
 
-variable "f5xc_aws_vpc_slo_subnet_node0" {
-  description = "F5 XC CE SLO interface subnet prefix"
+variable "f5xc_aws_vpc_slo_subnet_node1" {
+  description = "F5 XC CE node1 SLO interface subnet prefix"
+  type        = string
+}
+
+variable "f5xc_aws_vpc_slo_subnet_node2" {
+  description = "F5 XC CE node2 SLO interface subnet prefix"
   type        = string
 }
 
@@ -73,8 +88,8 @@ variable "f5xc_cluster_latitude" {
   type        = number
 }
 
-variable "f5xc_cluster_longitude" {
-  description = "F5 XC CE geo longitude"
+variable "aws_existing_vpc_id" {
+  description = "The ID of an already existing AWS VPC"
   type        = string
 }
 
@@ -83,8 +98,12 @@ variable "aws_existing_slo_subnet_id" {
   type        = string
 }
 
+variable "f5xc_cluster_longitude" {
+  description = "F5 XC CE geo longitude"
+  type        = string
+}
+
 variable "ssh_public_key_file" {
   description = "path to ssh public key file"
   type        = string
 }
-
