@@ -78,7 +78,7 @@ variable "f5xc_cluster_longitude" {
   type        = string
 }
 
-variable "aws_existing_slo_subnet_id" {
+variable "aws_slo_subnet_id_node0" {
   description = "F5 XC SLO - AWS Subnet ID"
   type        = string
 }

@@ -63,18 +63,18 @@ variable "owner" {
   type        = string
 }
 
-variable "f5xc_aws_vpc_slo_subnet_node0" {
-  description = "F5 XC CE node0 SLO interface subnet prefix"
+variable "aws_slo_subnet_id_node0" {
+  description = "F5 XC CE node0 SLO interface subnet id"
   type        = string
 }
 
-variable "f5xc_aws_vpc_slo_subnet_node1" {
-  description = "F5 XC CE node1 SLO interface subnet prefix"
+variable "aws_slo_subnet_id_node1" {
+  description = "F5 XC CE node1 SLO interface subnet id"
   type        = string
 }
 
-variable "f5xc_aws_vpc_slo_subnet_node2" {
-  description = "F5 XC CE node2 SLO interface subnet prefix"
+variable "aws_slo_subnet_id_node2" {
+  description = "F5 XC CE node2 SLO interface subnet id"
   type        = string
 }
 
@@ -90,11 +90,6 @@ variable "f5xc_cluster_latitude" {
 
 variable "aws_existing_vpc_id" {
   description = "The ID of an already existing AWS VPC"
-  type        = string
-}
-
-variable "aws_existing_slo_subnet_id" {
-  description = "F5 XC SLO - AWS Subnet ID"
   type        = string
 }
 
