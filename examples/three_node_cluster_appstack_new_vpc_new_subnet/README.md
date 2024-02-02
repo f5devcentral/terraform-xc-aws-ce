@@ -1,8 +1,8 @@
-# Example three node ce cluster with single nic and new VPC and new subnet
+# Example three node AppStack cluster with single nic and new VPC and new subnet
 
 This example instantiates:
 
-- Three node CE cluster
+- Three node AppStack cluster
 - AWS SLO interface
 - AWS VPC
 - AWS SLO interface subnet
