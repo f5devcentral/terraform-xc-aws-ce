@@ -10,29 +10,45 @@ locals {
 }
 
 module "f5xc_aws_cloud_ce_three_node_appstack_single_nic_new_vpc_new_subnet" {
-  source                = "../../modules/f5xc/ce/appstack/aws"
-  owner_tag             = var.owner
-  is_sensitive          = false
-  f5xc_tenant           = var.f5xc_tenant
-  f5xc_api_url          = var.f5xc_api_url
-  f5xc_api_token        = var.f5xc_api_token
-  f5xc_namespace        = var.f5xc_namespace
-  f5xc_aws_region       = var.f5xc_aws_region
-  f5xc_token_name       = format("%s-%s-%s", var.project_prefix, var.f5xc_cluster_name, var.project_suffix)
-  f5xc_cluster_name     = format("%s-%s-%s", var.project_prefix, var.f5xc_cluster_name, var.project_suffix)
-  f5xc_cluster_labels   = {}
-  f5xc_aws_vpc_az_nodes = {
-    node0 = {
-      f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_node0
-      f5xc_aws_vpc_az_name    = local.aws_availability_zone_node0
+  source              = "../../modules/f5xc/ce/appstack/aws"
+  owner_tag           = var.owner
+  is_sensitive        = false
+  f5xc_tenant         = var.f5xc_tenant
+  f5xc_api_url        = var.f5xc_api_url
+  f5xc_api_token      = var.f5xc_api_token
+  f5xc_namespace      = var.f5xc_namespace
+  f5xc_aws_region     = var.f5xc_aws_region
+  f5xc_token_name     = format("%s-%s-%s", var.project_prefix, var.f5xc_cluster_name, var.project_suffix)
+  f5xc_cluster_name   = format("%s-%s-%s", var.project_prefix, var.f5xc_cluster_name, var.project_suffix)
+  f5xc_cluster_labels = {}
+  f5xc_cluster_nodes  = {
+    master = {
+      master0 = {
+        f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_node0
+        f5xc_aws_vpc_az_name    = local.aws_availability_zone_node0
+      }
+      master1 = {
+        f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_node1
+        f5xc_aws_vpc_az_name    = local.aws_availability_zone_node1
+      }
+      master2 = {
+        f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_node2
+        f5xc_aws_vpc_az_name    = local.aws_availability_zone_node2
+      }
     }
-    node1 = {
-      f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_node1
-      f5xc_aws_vpc_az_name    = local.aws_availability_zone_node1
-    }
-    node2 = {
-      f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_node2
-      f5xc_aws_vpc_az_name    = local.aws_availability_zone_node2
+    worker = {
+      worker1 = {
+        f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_node0
+        f5xc_aws_vpc_az_name    = local.aws_availability_zone_node0
+      }
+      worker2 = {
+        f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_node1
+        f5xc_aws_vpc_az_name    = local.aws_availability_zone_node1
+      }
+      worker3 = {
+        f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_node2
+        f5xc_aws_vpc_az_name    = local.aws_availability_zone_node2
+      }
     }
   }
   f5xc_ce_gateway_type                 = var.f5xc_ce_gateway_type
