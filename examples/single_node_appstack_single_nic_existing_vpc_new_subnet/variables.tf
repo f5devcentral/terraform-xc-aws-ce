@@ -38,7 +38,7 @@ variable "f5xc_aws_region" {
   type        = string
 }
 
-variable "f5xc_aws_availability_zone" {
+variable "f5xc_aws_availability_zone_master0" {
   description = "AWS availability zone name"
   type        = string
 }
@@ -58,7 +58,7 @@ variable "aws_existing_vpc_id" {
   type        = string
 }
 
-variable "f5xc_aws_vpc_slo_subnet_node0" {
+variable "f5xc_aws_vpc_slo_subnet_master0" {
   description = "F5 XC CE SLO interface subnet prefix"
   type        = string
 }
@@ -75,11 +75,6 @@ variable "f5xc_cluster_latitude" {
 
 variable "f5xc_cluster_longitude" {
   description = "F5 XC CE geo longitude"
-  type        = string
-}
-
-variable "aws_slo_subnet_id_node0" {
-  description = "F5 XC SLO - AWS Subnet ID"
   type        = string
 }
 
