@@ -53,6 +53,21 @@ variable "f5xc_aws_availability_zone_node2" {
   type        = string
 }
 
+variable "f5xc_aws_availability_zone_worker0" {
+  description = "AWS availability zone name worker0"
+  type        = string
+}
+
+variable "f5xc_aws_availability_zone_worker1" {
+  description = "AWS availability zone name worker1"
+  type        = string
+}
+
+variable "f5xc_aws_availability_zone_worker2" {
+  description = "AWS availability zone name worker2"
+  type        = string
+}
+
 variable "f5xc_cluster_name" {
   description = "F5 XC CE cluster name"
   type        = string
@@ -80,6 +95,21 @@ variable "f5xc_aws_vpc_slo_subnet_node1" {
 
 variable "f5xc_aws_vpc_slo_subnet_node2" {
   description = "F5 XC CE node2 SLO interface subnet prefix"
+  type        = string
+}
+
+variable "f5xc_aws_vpc_slo_subnet_worker0" {
+  description = "F5 XC CE worker0 SLO interface subnet prefix"
+  type        = string
+}
+
+variable "f5xc_aws_vpc_slo_subnet_worker1" {
+  description = "F5 XC CE worker1 SLO interface subnet prefix"
+  type        = string
+}
+
+variable "f5xc_aws_vpc_slo_subnet_worker2" {
+  description = "F5 XC CE worker2 SLO interface subnet prefix"
   type        = string
 }
 
