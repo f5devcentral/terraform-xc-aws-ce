@@ -44,6 +44,7 @@ Terraform templates to create F5XC AWS cloud CE.
 | Three Node Cluster Multi NIC new VPC / subnet                            | [Description](examples/three_node_cluster_multi_nic_new_vpc_new_subnet/README.md)            |
 | Three Node Cluster Multi NIC existing VPC / new subnet                   | [Description](examples/three_node_cluster_multi_nic_existing_vpc_new_subnet/README.md)       |
 | Three Node Appstack Cluster new VPC / subnet                             | [Description](examples/three_node_cluster_appstack_new_vpc_new_subnet/README.md)             |
+| Three Node Appstack Cluster existing VPC / new subnet                    | [Description](examples/three_node_cluster_appstack_existing_vpc_new_subnet/README.md)        |
 
 ## Support
 
