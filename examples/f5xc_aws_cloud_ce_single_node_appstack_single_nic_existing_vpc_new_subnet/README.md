@@ -1,10 +1,9 @@
-# Example single node AppStack cluster with single nic and new VPC and new subnet
+# Example single node AppStack cluster with single nic and existing VPC and new subnet
 
 This example instantiates:
 
 - Appstack cluster with single master and no worker node
 - AWS SLO interface
-- AWS VPC
 - AWS SLO interface subnet
 - AWS route tables
 - AWS Internet Gateway
