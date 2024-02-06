@@ -38,33 +38,33 @@ variable "f5xc_aws_region" {
   type        = string
 }
 
-variable "f5xc_aws_availability_zone_node0" {
-  description = "AWS availability zone name node0"
+variable "f5xc_aws_availability_zone_master0" {
+  description = "AWS availability zone name"
   type        = string
 }
 
-variable "f5xc_aws_availability_zone_node1" {
-  description = "AWS availability zone name node1"
+variable "f5xc_aws_availability_zone_master1" {
+  description = "AWS availability zone name"
   type        = string
 }
 
-variable "f5xc_aws_availability_zone_node2" {
-  description = "AWS availability zone name node2"
+variable "f5xc_aws_availability_zone_master2" {
+  description = "AWS availability zone name"
   type        = string
 }
 
 variable "f5xc_aws_availability_zone_worker0" {
-  description = "AWS availability zone name worker0"
+  description = "AWS availability zone name"
   type        = string
 }
 
 variable "f5xc_aws_availability_zone_worker1" {
-  description = "AWS availability zone name worker1"
+  description = "AWS availability zone name"
   type        = string
 }
 
 variable "f5xc_aws_availability_zone_worker2" {
-  description = "AWS availability zone name worker2"
+  description = "AWS availability zone name"
   type        = string
 }
 
@@ -78,38 +78,38 @@ variable "owner" {
   type        = string
 }
 
-variable "aws_vpc_cidr_block" {
-  description = "AWS VPC CIDR block"
+variable "aws_existing_vpc_id" {
+  description = "The ID of an already existing AWS VPC"
   type        = string
 }
 
-variable "f5xc_aws_vpc_slo_subnet_node0" {
-  description = "F5 XC CE node0 SLO interface subnet prefix"
+variable "f5xc_aws_vpc_slo_subnet_master0" {
+  description = "F5 XC CE SLO interface subnet prefix"
   type        = string
 }
 
-variable "f5xc_aws_vpc_slo_subnet_node1" {
-  description = "F5 XC CE node1 SLO interface subnet prefix"
+variable "f5xc_aws_vpc_slo_subnet_master1" {
+  description = "F5 XC CE SLO interface subnet prefix"
   type        = string
 }
 
-variable "f5xc_aws_vpc_slo_subnet_node2" {
-  description = "F5 XC CE node2 SLO interface subnet prefix"
+variable "f5xc_aws_vpc_slo_subnet_master2" {
+  description = "F5 XC CE SLO interface subnet prefix"
   type        = string
 }
 
 variable "f5xc_aws_vpc_slo_subnet_worker0" {
-  description = "F5 XC CE worker0 SLO interface subnet prefix"
+  description = "F5 XC CE SLO interface subnet prefix"
   type        = string
 }
 
 variable "f5xc_aws_vpc_slo_subnet_worker1" {
-  description = "F5 XC CE worker1 SLO interface subnet prefix"
+  description = "F5 XC CE SLO interface subnet prefix"
   type        = string
 }
 
 variable "f5xc_aws_vpc_slo_subnet_worker2" {
-  description = "F5 XC CE worker2 SLO interface subnet prefix"
+  description = "F5 XC CE SLO interface subnet prefix"
   type        = string
 }
 
@@ -132,3 +132,4 @@ variable "ssh_public_key_file" {
   description = "path to ssh public key file"
   type        = string
 }
+

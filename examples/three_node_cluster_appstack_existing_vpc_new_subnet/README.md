@@ -1,16 +1,16 @@
-# Example three node AppStack cluster with single nic and new VPC and new subnet
+# Example three node AppStack cluster with single nic and existing VPC and new subnet
 
 This example instantiates:
 
 - Appstack cluster with three master and three worker nodes
 - AWS SLO interface
-- AWS VPC
 - AWS SLO interface subnet
 - AWS route tables
 - AWS Internet Gateway
-- AWS Loadbalancer
 - Assign AWS EIP to SLO
+- AWS Loadbalancer
 - Cluster nodes in different aws availability zones
+- K8s kubeconfig in _out directory
 
 # Usage
 
