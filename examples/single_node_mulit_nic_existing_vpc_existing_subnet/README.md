@@ -1,18 +1,17 @@
-# Example Single node multi NIC existing VPC new subnet with SLO no EIP and NAT GW
+# Example Single node multi NIC existing VPC existing subnet
 
 This example instantiates:
 
-- Single node CE
-- AWS SLO and SLI interface
-- AWS SLO interface subnet
-- AWS SLI interface subnet
-- AWS SLO interface private IP / no EIP
-- AWS NAT GW
-- AWS route tables
+- Single node CE cluster
+- AWS SLO interface
+- AWS SLI interface
+- AWS route table
 - AWS Internet Gateway
+- Assign AWS EIP to SLO
 
 # Usage
 
+- To deploy this example, an AWS VPC and SLO, SLI subnets are required in advance and in particular their IDs
 - Export AWS_ACCESS_KEY with: `export AWS_ACCESS_KEY_ID="aws access key id"`
 - Export AWS_SECRET_ACCESS_KEY with: `export AWS_SECRET_ACCESS_KEY=aws secret access key"`
 - Export F5 XC API certificate password with: `export VES_P12_PASSWORD="p12 password"`

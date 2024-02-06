@@ -78,6 +78,11 @@ variable "aws_slo_subnet_id_node0" {
   type        = string
 }
 
+variable "aws_sli_subnet_id_node0" {
+  description = "F5 XC SLI - AWS Subnet ID"
+  type        = string
+}
+
 variable "ssh_public_key_file" {
   description = "path to ssh public key file"
   type        = string

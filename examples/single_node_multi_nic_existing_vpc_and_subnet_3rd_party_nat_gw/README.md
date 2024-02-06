@@ -1,15 +1,9 @@
-# Example Single node multi NIC existing VPC new subnet with SLO no EIP and NAT GW
+# Example Single node multi NIC existing VPC new subnet with 3rd party NAT GW
 
 This example instantiates:
 
 - Single node CE
 - AWS SLO and SLI interface
-- AWS SLO interface subnet
-- AWS SLI interface subnet
-- AWS SLO interface private IP / no EIP
-- AWS NAT GW
-- AWS route tables
-- AWS Internet Gateway
 
 # Usage
 
