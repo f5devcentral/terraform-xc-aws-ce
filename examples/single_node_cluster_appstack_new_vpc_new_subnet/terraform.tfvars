@@ -12,7 +12,5 @@ f5xc_ce_gateway_type               = "voltstack_gateway"
 f5xc_cluster_latitude              = -73.935242
 f5xc_cluster_longitude             = 40.730610
 f5xc_aws_vpc_slo_subnet_node0      = "192.168.0.0/26"
-f5xc_aws_vpc_slo_subnet_worker0    = "192.168.1.0/26"
 f5xc_aws_availability_zone_node0   = "a"
-f5xc_aws_availability_zone_worker0 = "a"
 # ssh_public_key_file              = "path to ssh public key file"

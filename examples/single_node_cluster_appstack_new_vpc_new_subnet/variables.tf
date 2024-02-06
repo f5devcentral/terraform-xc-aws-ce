@@ -43,11 +43,6 @@ variable "f5xc_aws_availability_zone_node0" {
   type        = string
 }
 
-variable "f5xc_aws_availability_zone_worker0" {
-  description = "AWS availability zone name worker0"
-  type        = string
-}
-
 variable "f5xc_cluster_name" {
   description = "F5 XC CE cluster name"
   type        = string
@@ -65,11 +60,6 @@ variable "aws_vpc_cidr_block" {
 
 variable "f5xc_aws_vpc_slo_subnet_node0" {
   description = "F5 XC CE node0 SLO interface subnet prefix"
-  type        = string
-}
-
-variable "f5xc_aws_vpc_slo_subnet_worker0" {
-  description = "F5 XC CE worker0 SLO interface subnet prefix"
   type        = string
 }
 

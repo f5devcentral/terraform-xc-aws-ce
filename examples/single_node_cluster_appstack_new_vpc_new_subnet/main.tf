@@ -1,6 +1,5 @@
 locals {
   aws_availability_zone_node0   = format("%s%s", var.f5xc_aws_region, var.f5xc_aws_availability_zone_node0)
-  aws_availability_zone_worker0 = format("%s%s", var.f5xc_aws_region, var.f5xc_aws_availability_zone_worker0)
   custom_tags                   = {
     Owner         = var.owner
     f5xc-tenant   = var.f5xc_tenant
@@ -27,12 +26,7 @@ module "f5xc_aws_cloud_ce_single_node_appstack_single_nic_new_vpc_new_subnet" {
         f5xc_aws_vpc_az_name    = local.aws_availability_zone_node0
       }
     }
-    worker = {
-      worker1 = {
-        f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_worker0
-        f5xc_aws_vpc_az_name    = local.aws_availability_zone_worker0
-      }
-    }
+    worker = {}
   }
   f5xc_ce_gateway_type                 = var.f5xc_ce_gateway_type
   f5xc_cluster_latitude                = var.f5xc_cluster_latitude
