@@ -2,7 +2,7 @@
 
 This example instantiates:
 
-- Three node AppStack cluster
+- Appstack cluster with three master and three worker nodes
 - AWS SLO interface
 - AWS VPC
 - AWS SLO interface subnet
