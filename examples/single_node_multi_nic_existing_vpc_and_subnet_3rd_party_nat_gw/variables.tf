@@ -58,18 +58,13 @@ variable "aws_existing_vpc_id" {
   type        = string
 }
 
-variable "f5xc_aws_vpc_nat_gw_subnet" {
-  description = "AWS NAT GW subnet prefix"
+variable "aws_slo_subnet_id_node0" {
+  description = "already existing aws slo subnet id"
   type        = string
 }
 
-variable "f5xc_aws_vpc_slo_subnet_node0" {
-  description = "F5 XC CE SLO interface subnet prefix"
-  type        = string
-}
-
-variable "f5xc_aws_vpc_sli_subnet_node0" {
-  description = "F5 XC CE SLI interface subnet prefix"
+variable "aws_sli_subnet_id_node0" {
+  description = "already existing aws sli subnet id"
   type        = string
 }
 

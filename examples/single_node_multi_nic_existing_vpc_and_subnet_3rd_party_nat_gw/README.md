@@ -1,12 +1,15 @@
-# Example Single node multi NIC existing VPC new subnet with 3rd party NAT GW
+# Example Single node multi NIC existing VPC and existing subnet with 3rd party NAT GW
 
 This example instantiates:
 
 - Single node CE
 - AWS SLO and SLI interface
+- AWS security groups
 
 # Usage
 
+- To deploy this example, an AWS VPC and SLO, SLI subnets are required in advance and in particular their IDs and 3rd
+  party gateway should do SNAT and allow https IPSec ann or SSL traffic
 - Export AWS_ACCESS_KEY with: `export AWS_ACCESS_KEY_ID="aws access key id"`
 - Export AWS_SECRET_ACCESS_KEY with: `export AWS_SECRET_ACCESS_KEY=aws secret access key"`
 - Export F5 XC API certificate password with: `export VES_P12_PASSWORD="p12 password"`
