@@ -53,6 +53,16 @@ variable "owner" {
   type        = string
 }
 
+variable "aws_key_pair_id" {
+  description = "The ID of existing AWS ssh key pair"
+  type        = string
+}
+
+variable "aws_existing_iam_profile_name" {
+  description = "The name of existing AWS IAM profile"
+  type        = string
+}
+
 variable "aws_existing_vpc_id" {
   description = "The ID of an already existing AWS VPC"
   type        = string
