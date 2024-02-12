@@ -1,4 +1,4 @@
-# Example Single node multi NIC existing VPC and existing subnet with 3rd party NAT GW
+# Example Single node single NIC existing VPC and existing subnet with 3rd party NAT GW
 
 This example instantiates:
 
@@ -8,7 +8,7 @@ This example instantiates:
 
 # Usage
 
-- To deploy this example, an AWS VPC and SLO, SLI subnets are required in advance and in particular their IDs and 3rd
+- To deploy this example, an AWS VPC and SLO subnet are required in advance and in particular their IDs and 3rd
   party gateway should do SNAT and allow https IPSec ann or SSL traffic
 - Export AWS_ACCESS_KEY with: `export AWS_ACCESS_KEY_ID="aws access key id"`
 - Export AWS_SECRET_ACCESS_KEY with: `export AWS_SECRET_ACCESS_KEY=aws secret access key"`

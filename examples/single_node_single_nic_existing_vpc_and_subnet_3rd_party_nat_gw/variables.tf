@@ -63,11 +63,6 @@ variable "aws_slo_subnet_id_node0" {
   type        = string
 }
 
-variable "aws_sli_subnet_id_node0" {
-  description = "already existing aws sli subnet id"
-  type        = string
-}
-
 variable "f5xc_ce_gateway_type" {
   description = "F5 XC CE gateway type"
   type        = string
