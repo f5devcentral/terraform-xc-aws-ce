@@ -73,6 +73,16 @@ variable "aws_slo_subnet_id_node0" {
   type        = string
 }
 
+variable "aws_existing_sg_slo_ids" {
+  description = "Inject existing list of AWS SG IDs for SLO"
+  type        = list(string)
+}
+
+variable "aws_existing_sg_sli_ids" {
+  description = "Inject existing list of AWS SG IDs for SLI"
+  type        = list(string)
+}
+
 variable "f5xc_ce_gateway_type" {
   description = "F5 XC CE gateway type"
   type        = string
