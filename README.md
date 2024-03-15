@@ -52,6 +52,10 @@ Terraform templates to create F5XC AWS cloud CE.
 | Three Node Appstack Cluster new VPC / subnet                             | [Description](examples/three_node_cluster_appstack_new_vpc_new_subnet/README.md)                  |
 | Three Node Appstack Cluster existing VPC / new subnet                    | [Description](examples/three_node_cluster_appstack_existing_vpc_new_subnet/README.md)             |
 
+## ClickOps
+
+Find CE cloud-config example at [Example](clickops/f5-ce-data.yml) 
+
 ## Support
 
 For support, please open a GitHub issue. Note, the code in this repository is community supported and is not supported
