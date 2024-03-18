@@ -10,6 +10,10 @@ This example instantiates:
 - AWS Internet Gateway
 - Assign AWS EIP to SLO
 
+## Topology
+
+![Single Node Single NIC new VPC new subnet](../../images/aws_1n.png)
+
 # Usage
 
 - Export AWS_ACCESS_KEY with: `export AWS_ACCESS_KEY_ID="aws access key id"`
