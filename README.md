@@ -62,7 +62,7 @@ Terraform templates to create F5XC AWS cloud CE.
 
 ## ClickOps
 
-Find CE cloud-config example at [Example](clickops/f5-ce-data.yml)
+Find CE cloud-config example for ClickOps deployment at [Cloud-Config](clickops/f5-ce-data.yml)
 
 ## Support
 
