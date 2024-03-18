@@ -25,7 +25,6 @@ Terraform templates to create F5XC AWS cloud CE.
 - Terraform (https://developer.hashicorp.com/terraform/install?product_intent=terraform)
 - F5 XC Credentials (https://docs.cloud.f5.com/docs/how-to/user-mgmt/credentials)
     * API Certificate
-    * API Token
 - SSH public key
     * ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
