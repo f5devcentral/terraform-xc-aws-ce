@@ -12,7 +12,7 @@ This example instantiates:
 
 ## Topology
 
-![Single Node Single NIC new VPC new subnet](../../images/aws_1n.png)
+![Single Node Single NIC new VPC new subnet](../images/aws_1n.png)
 
 # Usage
 
