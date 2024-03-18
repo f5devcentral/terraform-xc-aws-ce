@@ -13,11 +13,11 @@ Terraform templates to create F5XC AWS cloud CE.
 
 ### OS Platform
 
-| Name            | Status   |
-|-----------------|----------|
-| Linux           | tested   |
-| Mac OS (Sonoma) | tested   |
-| Windows         | untested |
+| Name            | Status      |
+|-----------------|-------------|
+| Linux           | supported   |
+| Mac OS (Sonoma) | supported   |
+| Windows         | unsupported |
 
 ## Installation
 
