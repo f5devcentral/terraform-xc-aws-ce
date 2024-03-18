@@ -83,19 +83,21 @@ variable "f5xc_ce_gateway_type" {
   type        = string
 }
 
-variable "f5xc_cluster_latitude" {
-  description = "F5 XC CE geo latitude"
-  type        = number
-}
-
 variable "aws_existing_vpc_id" {
   description = "The ID of an already existing AWS VPC"
   type        = string
 }
 
+variable "f5xc_cluster_latitude" {
+  description = "F5 XC CE geo latitude"
+  type        = number
+  default     = -73.935242
+}
+
 variable "f5xc_cluster_longitude" {
   description = "F5 XC CE geo longitude"
-  type        = string
+  type        = number
+  default     = 40.730610
 }
 
 variable "ssh_public_key_file" {
