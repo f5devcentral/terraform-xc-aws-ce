@@ -21,6 +21,7 @@ variable "f5xc_api_url" {
 variable "f5xc_api_token" {
   description = "F5 XC API token"
   type        = string
+  default     = ""
 }
 
 variable "f5xc_tenant" {
@@ -66,11 +67,13 @@ variable "f5xc_ce_gateway_type" {
 variable "f5xc_cluster_latitude" {
   description = "F5 XC CE geo latitude"
   type        = number
+  default     = -73.935242
 }
 
 variable "f5xc_cluster_longitude" {
   description = "F5 XC CE geo longitude"
-  type        = string
+  type        = number
+  default     = 40.730610
 }
 
 variable "aws_slo_subnet_id_node0" {
@@ -80,6 +83,11 @@ variable "aws_slo_subnet_id_node0" {
 
 variable "aws_sli_subnet_id_node0" {
   description = "F5 XC SLI - AWS Subnet ID"
+  type        = string
+}
+
+variable "f5xc_api_p12_cert_password" {
+  description = "F5 XC API certificate file password"
   type        = string
 }
 
