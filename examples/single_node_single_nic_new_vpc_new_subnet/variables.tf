@@ -13,6 +13,11 @@ variable "f5xc_api_p12_file" {
   type        = string
 }
 
+variable "f5xc_api_p12_cert_password" {
+  description = "F5 XC API certificate file password"
+  type        = string
+}
+
 variable "f5xc_api_url" {
   description = "F5 XC API URL"
   type        = string

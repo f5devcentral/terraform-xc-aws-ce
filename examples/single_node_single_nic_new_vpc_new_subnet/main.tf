@@ -30,6 +30,7 @@ module "f5xc_aws_cloud_ce_single_node_single_nic_new_vpc_new_subnet" {
   f5xc_ce_gateway_type                 = var.f5xc_ce_gateway_type
   f5xc_cluster_latitude                = var.f5xc_cluster_latitude
   f5xc_cluster_longitude               = var.f5xc_cluster_longitude
+  f5xc_api_p12_cert_password           = var.f5xc_api_p12_cert_password
   aws_vpc_cidr_block                   = var.aws_vpc_cidr_block
   aws_security_group_rules_slo_egress  = []
   aws_security_group_rules_slo_ingress = []
