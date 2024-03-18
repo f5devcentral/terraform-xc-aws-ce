@@ -11,6 +11,14 @@ Terraform templates to create F5XC AWS cloud CE.
 | <a name="requirement_git"></a> [git](https://git-scm.com/)                               | \>= 8.0   |
 | <a name="requirement_jq"></a> [jq](https://jqlang.github.io/jq/)                         | latest    |
 
+### OS Platform
+
+| Name            | Status   |
+|-----------------|----------|
+| Linux           | tested   |
+| Mac OS (Sonoma) | tested   |
+| Windows         | untested |
+
 ## Installation
 
 - Git (https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
@@ -54,7 +62,7 @@ Terraform templates to create F5XC AWS cloud CE.
 
 ## ClickOps
 
-Find CE cloud-config example at [Example](clickops/f5-ce-data.yml) 
+Find CE cloud-config example at [Example](clickops/f5-ce-data.yml)
 
 ## Support
 

@@ -2,13 +2,13 @@
 
 This example instantiates:
 
-- Appstack cluster with three master and three worker nodes
+- AppStack cluster with three master and three worker nodes
 - AWS SLO interface
 - AWS SLO interface subnet
 - AWS route tables
 - AWS Internet Gateway
 - Assign AWS EIP to SLO
-- AWS Loadbalancer
+- AWS LoadBalancer
 - Cluster nodes in different aws availability zones
 - K8s kubeconfig in _out directory
 
