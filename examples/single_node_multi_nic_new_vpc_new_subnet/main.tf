@@ -10,7 +10,7 @@ locals {
 module "f5xc_aws_cloud_ce_single_node_multi_nic_new_vpc_new_subnet" {
   source                = "../../modules/f5xc/ce/aws"
   owner_tag             = var.owner
-  is_sensitive          = fals
+  is_sensitive          = false
   has_public_ip         = true
   status_check_type     = "cert"
   f5xc_tenant           = var.f5xc_tenant
