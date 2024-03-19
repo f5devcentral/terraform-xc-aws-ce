@@ -119,6 +119,12 @@ variable "f5xc_ce_gateway_type" {
   default     = "voltstack_gateway"
 }
 
+variable "f5xc_api_p12_cert_password" {
+  description = "F5 XC API certificate file password"
+  type        = string
+  default     = ""
+}
+
 variable "f5xc_cluster_latitude" {
   description = "F5 XC CE geo latitude"
   type        = number
