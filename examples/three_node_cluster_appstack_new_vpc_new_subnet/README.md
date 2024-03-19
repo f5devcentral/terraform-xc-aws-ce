@@ -8,9 +8,13 @@ This example instantiates:
 - AWS SLO interface subnet
 - AWS route tables
 - AWS Internet Gateway
-- AWS Loadbalancer
+- AWS LoadBalancer
 - Assign AWS EIP to SLO
 - Cluster nodes in different aws availability zones
+
+## Topology
+
+![Three Node Cluster_new VPC new subnet](../../images/appstack_3n.png)
 
 # Usage
 

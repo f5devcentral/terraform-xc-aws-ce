@@ -9,7 +9,7 @@ This example instantiates:
 - AWS SLI interface subnet
 - AWS route tables
 - AWS Internet Gateway
-- AWS Loadbalancer
+- AWS LoadBalancer
 - Assign AWS EIP to SLO
 - Cluster nodes in different aws availability zones
 
