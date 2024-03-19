@@ -27,6 +27,9 @@ Terraform templates to create F5XC AWS cloud CE.
     * API Certificate
 - SSH public key
     * ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+- F5 XC full tenant name
+    * Obtain full tenant name in XC web console by navigating to administration page --> tenant settings
+    * ![Tenant Overview](images/tenant_overview_small.png)
 
 ## Usage
 
