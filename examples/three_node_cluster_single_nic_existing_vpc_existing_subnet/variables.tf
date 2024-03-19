@@ -31,6 +31,7 @@ variable "f5xc_tenant" {
 variable "f5xc_namespace" {
   description = "F5 XC namespace name"
   type        = string
+  default     = "system"
 }
 
 variable "f5xc_aws_region" {

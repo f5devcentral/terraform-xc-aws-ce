@@ -32,6 +32,7 @@ variable "f5xc_tenant" {
 variable "f5xc_namespace" {
   description = "F5 XC namespace name"
   type        = string
+  default     = "system"
 }
 
 variable "f5xc_aws_region" {
@@ -72,6 +73,7 @@ variable "f5xc_aws_vpc_sli_subnet_node0" {
 variable "f5xc_ce_gateway_type" {
   description = "F5 XC CE gateway type"
   type        = string
+  default     = "ingress_egress_gateway"
 }
 
 variable "f5xc_cluster_latitude" {
