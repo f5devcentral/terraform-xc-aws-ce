@@ -81,6 +81,7 @@ variable "f5xc_aws_vpc_slo_subnet_node2" {
 variable "f5xc_ce_gateway_type" {
   description = "F5 XC CE gateway type"
   type        = string
+  default     = "ingress_gateway"
 }
 
 variable "aws_existing_vpc_id" {

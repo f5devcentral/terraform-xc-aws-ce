@@ -67,6 +67,7 @@ variable "f5xc_aws_vpc_slo_subnet_master0" {
 variable "f5xc_ce_gateway_type" {
   description = "F5 XC CE gateway type"
   type        = string
+  default     = "voltstack_gateway"
 }
 
 variable "f5xc_cluster_latitude" {

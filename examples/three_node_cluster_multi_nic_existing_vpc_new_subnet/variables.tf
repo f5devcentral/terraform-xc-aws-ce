@@ -96,6 +96,7 @@ variable "f5xc_aws_vpc_sli_subnet_node2" {
 variable "f5xc_ce_gateway_type" {
   description = "F5 XC CE gateway type"
   type        = string
+  default     = "ingress_egress_gateway"
 }
 
 variable "f5xc_cluster_latitude" {

@@ -92,6 +92,7 @@ variable "aws_existing_iam_profile_name" {
 variable "f5xc_ce_gateway_type" {
   description = "F5 XC CE gateway type"
   type        = string
+  default     = "ingress_gateway"
 }
 
 variable "f5xc_cluster_latitude" {
