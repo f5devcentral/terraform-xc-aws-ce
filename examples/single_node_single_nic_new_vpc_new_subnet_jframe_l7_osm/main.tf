@@ -12,6 +12,7 @@ module "f5xc_aws_cloud_ce_single_node_single_nic_new_vpc_new_subnet" {
   owner_tag             = var.owner
   is_sensitive          = false
   has_public_ip         = true
+  status_check_type     = "cert"
   f5xc_tenant           = var.f5xc_tenant
   f5xc_api_url          = var.f5xc_api_url
   f5xc_api_token        = var.f5xc_api_token

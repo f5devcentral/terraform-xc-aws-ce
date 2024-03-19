@@ -12,6 +12,7 @@ module "f5xc_aws_cloud_ce_single_node_single_nic_existing_vpc_existing_subnet_sl
   owner_tag                     = var.owner
   is_sensitive                  = false
   has_public_ip                 = false
+  status_check_type             = "cert"
   create_new_aws_vpc            = false
   create_new_aws_igw            = false
   create_new_aws_sli_rt         = false

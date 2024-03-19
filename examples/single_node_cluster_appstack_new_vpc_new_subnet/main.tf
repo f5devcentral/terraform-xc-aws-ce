@@ -1,6 +1,6 @@
 locals {
-  aws_availability_zone_node0   = format("%s%s", var.f5xc_aws_region, var.f5xc_aws_availability_zone_node0)
-  custom_tags                   = {
+  aws_availability_zone_node0 = format("%s%s", var.f5xc_aws_region, var.f5xc_aws_availability_zone_node0)
+  custom_tags                 = {
     Owner         = var.owner
     f5xc-tenant   = var.f5xc_tenant
     f5xc-template = "f5xc_aws_cloud_ce_single_node_appstack_single_nic_new_vpc_new_subnet"
@@ -11,6 +11,7 @@ module "f5xc_aws_cloud_ce_single_node_appstack_single_nic_new_vpc_new_subnet" {
   source              = "../../modules/f5xc/ce/appstack/aws"
   owner_tag           = var.owner
   is_sensitive        = false
+  status_check_type   = "cert"
   f5xc_tenant         = var.f5xc_tenant
   f5xc_api_url        = var.f5xc_api_url
   f5xc_api_token      = var.f5xc_api_token
