@@ -1,4 +1,4 @@
-# Example Single node multi NIC existing VPC new subnet with SLO no EIP and NAT GW
+# Example Single node multi NIC existing VPC new subnet with SLO no EIP and AWS NAT GW
 
 This example instantiates:
 
