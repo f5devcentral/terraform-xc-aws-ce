@@ -8,9 +8,9 @@ This example instantiates:
 
 # Usage
 
-- To deploy this example, an AWS VPC and SLO subnet are required in advance and in particular their IDs and 3rd
-  party gateway should do SNAT and allow https IPSec ann or SSL traffic
-- Additionally, aws key pair id, list of aws security group id(s) for SLO interface needs to be available
+- To deploy this example AWS VPC and SLO subnet are required in advance and in particular their IDs
+- Additionally, aws key pair id, list of aws security group id(s) for SLO interface and IAM profile needs to be available
+- The 3rd party gateway should do SNAT and allow https IPSec ann or SSL traffic
 - If needed extend existing IAM policy actions with e.g. "ec2:DescribeKeyPairs"
   [IAM Policy Example](https://docs.cloud.f5.com/docs/reference/cloud-cred-ref/aws-vpc-cred-ref)
 - Export AWS_ACCESS_KEY with: `export AWS_ACCESS_KEY_ID="aws access key id"`
