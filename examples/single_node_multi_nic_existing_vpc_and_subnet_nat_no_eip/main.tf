@@ -40,7 +40,6 @@ module "f5xc_aws_cloud_ce_single_node_multi_nic_existing_vpc_and_subnet_3rd_part
   ssh_public_key                       = file(var.ssh_public_key_file)
   providers                            = {
     aws      = aws.default
-    restapi  = restapi.default
     volterra = volterra.default
   }
 }

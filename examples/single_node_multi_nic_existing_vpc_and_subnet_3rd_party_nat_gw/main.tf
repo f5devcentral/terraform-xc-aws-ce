@@ -50,7 +50,6 @@ module "f5xc_aws_cloud_ce_single_node_multi_nic_existing_vpc_new_subnet_slo_no_e
 
   providers = {
     aws      = aws.default
-    restapi  = restapi.default
     volterra = volterra.default
   }
 }
