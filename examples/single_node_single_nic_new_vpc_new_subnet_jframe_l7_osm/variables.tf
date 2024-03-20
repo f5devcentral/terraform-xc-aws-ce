@@ -97,6 +97,10 @@ variable "f5xc_ce_performance_enhancement_mode" {
   })
 }
 
+variable "f5xc_enable_offline_survivability_mode" {
+  type = bool
+}
+
 variable "ssh_public_key_file" {
   description = "path to ssh public key file"
   type        = string

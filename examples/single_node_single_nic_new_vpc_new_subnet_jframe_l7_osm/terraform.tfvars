@@ -16,3 +16,4 @@ f5xc_ce_performance_enhancement_mode = {
     jumbo_frame_enabled = true
   }
 }
+f5xc_enable_offline_survivability_mode = true
