@@ -42,15 +42,14 @@ module "f5xc_aws_cloud_ce_single_node_multi_nic_existing_vpc_new_subnet_slo_no_e
   f5xc_cluster_latitude                = var.f5xc_cluster_latitude
   f5xc_cluster_longitude               = var.f5xc_cluster_longitude
   f5xc_api_p12_cert_password           = var.f5xc_api_p12_cert_password
-  aws_key_pair_id                      = var.aws_key_pair_id
   aws_existing_vpc_id                  = var.aws_existing_vpc_id
-  aws_existing_iam_profile_name        = var.aws_existing_iam_profile_name
   aws_existing_sg_slo_ids              = var.aws_existing_sg_slo_ids
   aws_existing_sg_sli_ids              = var.aws_existing_sg_sli_ids
+  aws_existing_key_pair_id             = var.aws_existing_key_pair_id
+  aws_existing_iam_profile_name        = var.aws_existing_iam_profile_name
   aws_security_group_rules_slo_egress  = []
   aws_security_group_rules_slo_ingress = []
-
-  providers = {
+  providers                            = {
     aws      = aws.default
     volterra = volterra.default
   }
