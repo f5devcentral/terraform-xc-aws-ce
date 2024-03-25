@@ -41,23 +41,29 @@ Terraform templates to create F5XC AWS cloud CE.
 
 ## Input variables
 
-```hcl
-owner                         = "owner_email_address"
-project_prefix                = "f5xc"
-project_suffix                = "61"
-aws_existing_vpc_id           = "vpc-089de438436174ab7"
-aws_existing_sg_slo_ids       = ["sg id a", "sg id b"]
-aws_existing_sg_sli_ids       = ["sg id c", "sg id d"]
-aws_slo_subnet_id_node0       = "subnet-09666a3b23646a080"
-aws_existing_key_pair_id      = "key-06da7786025a27936"
-aws_existing_iam_profile_name = "f5xc-aws-ec2-test-profile-01"
-f5xc_tenant                   = "full f5 xc tenant name e.g. playground-abcdefg"
-f5xc_api_url                  = "f5 xc api url e.g. https://https://playground.console.ves.volterra.io/api"
-f5xc_aws_region               = "us-west-2"
-f5xc_cluster_name             = "aws-ce-test"
-f5xc_api_p12_file             = "path_to_api_cert_file"
-f5xc_aws_availability_zone    = "a"
-```
+Description of available input variables. Used input variables will change per topology example:
+
+| Name                          | Description                                                                                                        |
+|-------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| owner                         | Tag aws objects with creator / owner email address                                                                 |
+| project_prefix                | String added at the beginning of various AWS / F5 XC object identifier. `<project_prefix>_<object>`                |
+| project_suffix                | String added at the end of various AWS / F5 XC object identifier. `<project_prefix>_<object>_<project_suffix>`     |
+|                               | Example prefix + suffix for F5XC site name `project_prefix_cluster_name_project_suffix`                            |
+|                               |                                                                                                                    |
+| f5xc_tenant                   | Full f5 xc tenant name e.g. playground-abcdefg                                                                     |
+| f5xc_api_url                  | F5 XC API URL e.g. https://https://playground.console.ves.volterra.io/api                                          |
+| f5xc_aws_region               | AWS region to deploy site in e.g. "us-west-2"                                                                      |
+| f5xc_cluster_name             | F5 XC cluster name e.g. "aws-ce-test"                                                                              |
+| f5xc_api_p12_file             | Path to F5 XC exported API cert file                                                                               |
+| f5xc_aws_availability_zone    | AWS availability zone to deploy object in                                                                          |
+|                               |                                                                                                                    |
+| aws_existing_vpc_id           | Id of existing AWS VPC e.g. vpc-089de438436174ab7                                                                  |
+| aws_existing_sg_slo_ids       | SLO comma separated list of security group id strings e.g. ["id-1", "id-2", "id-3"]. Leave empty to omit injection |
+| aws_existing_sg_sli_ids       | SLI comma separated list of security group id strings e.g. ["id-1", "id-2", "id-3"]. Leave empty to omit injection |
+| aws_slo_subnet_id_node`X`     | Per node slo (outside interface) existing subnet id                                                                |
+| aws_sli_subnet_id_node`X`     | Per node sli (inside interface) existing subnet id                                                                 |
+| aws_existing_key_pair_id      | Inject existing ssh key pair `id`                                                                                  |
+| aws_existing_iam_profile_name | Inject existing iam profile `name`                                                                                 |
 
 ## Topologies
 
