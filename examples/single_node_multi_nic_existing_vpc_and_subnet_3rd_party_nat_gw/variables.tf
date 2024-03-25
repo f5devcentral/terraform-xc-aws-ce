@@ -80,8 +80,8 @@ variable "aws_existing_sg_sli_ids" {
   type        = list(string)
 }
 
-variable "aws_key_pair_id" {
-  description = "The ID of existing AWS ssh key pair"
+variable "aws_existing_key_pair_id" {
+  description = "Inject existing AWS key pair object id"
   type        = string
 }
 

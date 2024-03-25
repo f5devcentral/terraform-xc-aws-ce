@@ -55,11 +55,6 @@ variable "owner" {
   type        = string
 }
 
-variable "aws_key_pair_id" {
-  description = "The ID of existing AWS ssh key pair"
-  type        = string
-}
-
 variable "aws_existing_iam_profile_name" {
   description = "The name of existing AWS IAM profile"
   type        = string
@@ -78,6 +73,11 @@ variable "aws_slo_subnet_id_node0" {
 variable "aws_existing_sg_slo_ids" {
   description = "Inject existing list of AWS SG IDs for SLO"
   type        = list(string)
+}
+
+variable "aws_existing_key_pair_id" {
+  description = "Inject existing AWS key pair object id"
+  type        = string
 }
 
 variable "f5xc_ce_gateway_type" {
@@ -106,4 +106,5 @@ variable "f5xc_api_p12_cert_password" {
 variable "ssh_public_key_file" {
   description = "path to ssh public key file"
   type        = string
+  default     = ""
 }
