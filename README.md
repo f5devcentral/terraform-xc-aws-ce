@@ -122,7 +122,7 @@ Contributor License Agreement (CLA).
 
 If you are signing as an individual, we recommend that you talk to your employer (if applicable) before signing the CLA
 since some employment agreements may have restrictions on your contributions to other projects.
-Otherwise by submitting a CLA you represent that you are legally entitled to grant the licenses recited therein.
+Otherwise, by submitting a CLA you represent that you are legally entitled to grant the licenses recited therein.
 
 If your employer has rights to intellectual property that you create, such as your contributions, you represent that you
 have received permission to make contributions on behalf of that employer, that your employer has waived such rights for
