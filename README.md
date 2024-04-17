@@ -51,7 +51,7 @@ Description of available input variables. Used input variables will change per t
 |                               | Example prefix + suffix for F5XC site name `project_prefix_cluster_name_project_suffix`                            |
 |                               |                                                                                                                    |
 | f5xc_tenant                   | Full f5 xc tenant name e.g. playground-abcdefg                                                                     |
-| f5xc_api_url                  | F5 XC API URL e.g. https://https://playground.console.ves.volterra.io/api                                          |
+| f5xc_api_url                  | F5 XC API URL e.g. https://playground.console.ves.volterra.io/api                                          |
 | f5xc_aws_region               | AWS region to deploy site in e.g. "us-west-2"                                                                      |
 | f5xc_cluster_name             | F5 XC cluster name e.g. "aws-ce-test"                                                                              |
 | f5xc_api_p12_file             | Path to F5 XC exported API cert file                                                                               |
