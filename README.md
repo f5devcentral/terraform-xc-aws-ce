@@ -1,6 +1,6 @@
 ## Overview
 
-Terraform templates to create F5XC AWS cloud CE.
+Terraform templates to create F5XC AWS cloud CE (manual mode deployment).
 
 ## Requirements
 
