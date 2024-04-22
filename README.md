@@ -45,13 +45,16 @@ Description of available input variables. Used input variables will change per t
 
 | Name                          | Description                                                                                                        |
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| SLO                           | Site local outside interface (external interface / egress interface)                                               |
+| SLI                           | Site local inside interface (internal interface  ( ingress interface)                                              |
+|                               |                                                                                                                    |
 | owner                         | Tag aws objects with creator / owner email address                                                                 |
 | project_prefix                | String added at the beginning of various AWS / F5 XC object identifier. `<project_prefix>_<object>`                |
 | project_suffix                | String added at the end of various AWS / F5 XC object identifier. `<project_prefix>_<object>_<project_suffix>`     |
 |                               | Example prefix + suffix for F5XC site name `project_prefix_cluster_name_project_suffix`                            |
 |                               |                                                                                                                    |
 | f5xc_tenant                   | Full f5 xc tenant name e.g. playground-abcdefg                                                                     |
-| f5xc_api_url                  | F5 XC API URL e.g. https://playground.console.ves.volterra.io/api                                          |
+| f5xc_api_url                  | F5 XC API URL e.g. https://playground.console.ves.volterra.io/api                                                  |
 | f5xc_aws_region               | AWS region to deploy site in e.g. "us-west-2"                                                                      |
 | f5xc_cluster_name             | F5 XC cluster name e.g. "aws-ce-test"                                                                              |
 | f5xc_api_p12_file             | Path to F5 XC exported API cert file                                                                               |

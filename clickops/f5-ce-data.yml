@@ -1,5 +1,5 @@
 #cloud-config
-#Only value that needs to be inserted is the token. Insert as is without paranthesis
+#Only value that needs to be inserted is the token. Insert as is without parenthesis
 write_files:
 #ves
 - path: /etc/hosts
