@@ -3,11 +3,11 @@ locals {
   custom_tags = {
     Owner         = var.owner
     f5xc-tenant   = var.f5xc_tenant
-    f5xc-template = "f5xc_aws_cloud_ce_single_node_single_nic_new_vpc_new_subnet"
+    f5xc-template = "f5xc_aws_cloud_ce_single_node_single_nic_new_vpc_new_subnet_custom_sg"
   }
 }
 
-module "f5xc_aws_cloud_ce_single_node_single_nic_new_vpc_new_subnet" {
+module "f5xc_aws_cloud_ce_single_node_single_nic_new_vpc_new_subnet_custom_sg" {
   source            = "../../modules/f5xc/ce/aws"
   owner_tag         = var.owner
   is_sensitive      = false
@@ -42,6 +42,6 @@ module "f5xc_aws_cloud_ce_single_node_single_nic_new_vpc_new_subnet" {
   }
 }
 
-output "f5xc_aws_cloud_ce_single_node_single_nic_new_vpc_new_subnet" {
-  value = module.f5xc_aws_cloud_ce_single_node_single_nic_new_vpc_new_subnet
+output "f5xc_aws_cloud_ce_single_node_single_nic_new_vpc_new_subnet_custom_sg" {
+  value = module.f5xc_aws_cloud_ce_single_node_single_nic_new_vpc_new_subnet_custom_sg
 }
