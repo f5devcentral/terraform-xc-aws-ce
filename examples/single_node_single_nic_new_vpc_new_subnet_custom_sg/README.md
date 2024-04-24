@@ -1,4 +1,4 @@
-# Example Single node single NIC new VPC new subnet
+# Example Single node single NIC new VPC new subnet with custom security group
 
 This example instantiates:
 
@@ -9,10 +9,7 @@ This example instantiates:
 - AWS route tables
 - AWS Internet Gateway
 - Assign AWS EIP to SLO
-
-## Topology
-
-![Single Node Single NIC new VPC new subnet](../../images/aws_1n.png)
+- AWS custom security group ingress / egress rules for SLO
 
 # Usage
 
