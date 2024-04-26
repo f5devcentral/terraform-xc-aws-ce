@@ -3,11 +3,11 @@ locals {
   custom_tags           = {
     Owner         = var.owner
     f5xc-tenant   = var.f5xc_tenant
-    f5xc-template = "f5xc_aws_cloud_ce_single_node_multi_nic_existing_vpc_and_subnet_3rd_party_nat_gw"
+    f5xc-template = "f5xc_aws_cloud_ce_single_node_multi_nic_existing_vpc_and_subnet_nat_gw_no_eip"
   }
 }
 
-module "f5xc_aws_cloud_ce_single_node_multi_nic_existing_vpc_and_subnet_3rd_party_nat_gw" {
+module "f5xc_aws_cloud_ce_single_node_multi_nic_existing_vpc_and_subnet_nat_gw_no_eip" {
   source                = "../../modules/f5xc/ce/aws"
   owner_tag             = var.owner
   is_sensitive          = false
@@ -46,6 +46,6 @@ module "f5xc_aws_cloud_ce_single_node_multi_nic_existing_vpc_and_subnet_3rd_part
   }
 }
 
-output "f5xc_aws_cloud_ce_single_node_multi_nic_existing_vpc_and_subnet_3rd_party_nat_gw" {
-  value = module.f5xc_aws_cloud_ce_single_node_multi_nic_existing_vpc_and_subnet_3rd_party_nat_gw
+output "f5xc_aws_cloud_ce_single_node_multi_nic_existing_vpc_and_subnet_nat_gw_no_eip" {
+  value = module.f5xc_aws_cloud_ce_single_node_multi_nic_existing_vpc_and_subnet_nat_gw_no_eip
 }
