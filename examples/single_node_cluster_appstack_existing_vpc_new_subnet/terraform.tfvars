@@ -8,6 +8,5 @@ f5xc_api_url                       = "f5 xc api url e.g. https://https://playgro
 f5xc_aws_region                    = "us-west-2"
 f5xc_cluster_name                  = "aws-ce-test"
 f5xc_api_p12_file                  = "path_to_api_cert_file"
-f5xc_ce_gateway_type               = "voltstack_gateway"
 f5xc_aws_vpc_slo_subnet_master0    = "192.168.1.0/26"
 f5xc_aws_availability_zone_master0 = "a"
