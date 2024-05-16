@@ -28,15 +28,15 @@ module "f5xc_aws_cloud_ce_three_node_single_nic_existing_vpc_existing_subnet" {
   f5xc_aws_vpc_az_nodes = {
     node0 = {
       aws_existing_slo_subnet_id = var.aws_slo_subnet_id_node0
-      f5xc_aws_vpc_az_name       = local.aws_availability_zone_node0
+      aws_vpc_az_name       = local.aws_availability_zone_node0
     }
     node1 = {
       aws_existing_slo_subnet_id = var.aws_slo_subnet_id_node1
-      f5xc_aws_vpc_az_name       = local.aws_availability_zone_node1
+      aws_vpc_az_name       = local.aws_availability_zone_node1
     }
     node2 = {
       aws_existing_slo_subnet_id = var.aws_slo_subnet_id_node2
-      f5xc_aws_vpc_az_name       = local.aws_availability_zone_node2
+      aws_vpc_az_name       = local.aws_availability_zone_node2
     }
   }
   f5xc_ce_gateway_type                 = var.f5xc_ce_gateway_type

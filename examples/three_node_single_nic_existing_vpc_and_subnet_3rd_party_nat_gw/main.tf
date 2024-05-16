@@ -1,13 +1,15 @@
 locals {
-  aws_availability_zone = format("%s%s", var.f5xc_aws_region, var.f5xc_aws_availability_zone)
-  custom_tags           = {
+  aws_availability_zone_node0 = format("%s%s", var.f5xc_aws_region, var.aws_availability_zone_node0)
+  aws_availability_zone_node1 = format("%s%s", var.f5xc_aws_region, var.aws_availability_zone_node1)
+  aws_availability_zone_node2 = format("%s%s", var.f5xc_aws_region, var.aws_availability_zone_node2)
+  custom_tags = {
     Owner         = var.owner
     f5xc-tenant   = var.f5xc_tenant
-    f5xc-template = "f5xc_aws_cloud_ce_single_node_multi_nic_existing_vpc_new_subnet_slo_no_eip_nat_gw"
+    f5xc-template = "f5xc_aws_cloud_ce_three_node_single_nic_existing_vpc_new_subnet_slo_no_eip_3rd_party_nat_gw"
   }
 }
 
-module "f5xc_aws_cloud_ce_single_node_multi_nic_existing_vpc_new_subnet_slo_no_eip_nat_gw" {
+module "f5xc_aws_cloud_ce_three_node_single_nic_existing_vpc_new_subnet_slo_no_eip_3rd_party_nat_gw" {
   source                        = "../../modules/f5xc/ce/aws"
   owner_tag                     = var.owner
   is_sensitive                  = false
@@ -30,12 +32,19 @@ module "f5xc_aws_cloud_ce_single_node_multi_nic_existing_vpc_new_subnet_slo_no_e
   f5xc_token_name               = format("%s-%s-%s", var.project_prefix, var.f5xc_cluster_name, var.project_suffix)
   f5xc_cluster_name             = format("%s-%s-%s", var.project_prefix, var.f5xc_cluster_name, var.project_suffix)
   f5xc_api_p12_file             = var.f5xc_api_p12_file
-  f5xc_cluster_labels           = {}
-  f5xc_aws_vpc_az_nodes         = {
+  f5xc_cluster_labels = {}
+  f5xc_aws_vpc_az_nodes = {
     node0 = {
       aws_existing_slo_subnet_id = var.aws_slo_subnet_id_node0
-      aws_existing_sli_subnet_id = var.aws_sli_subnet_id_node0
-      aws_vpc_az_name       = local.aws_availability_zone
+      aws_vpc_az_name       = local.aws_availability_zone_node0
+    }
+    node1 = {
+      aws_existing_slo_subnet_id = var.aws_slo_subnet_id_node1
+      aws_vpc_az_name       = local.aws_availability_zone_node1
+    }
+    node2 = {
+      aws_existing_slo_subnet_id = var.aws_slo_subnet_id_node2
+      aws_vpc_az_name       = local.aws_availability_zone_node2
     }
   }
   f5xc_ce_gateway_type                 = var.f5xc_ce_gateway_type
@@ -44,17 +53,16 @@ module "f5xc_aws_cloud_ce_single_node_multi_nic_existing_vpc_new_subnet_slo_no_e
   f5xc_api_p12_cert_password           = var.f5xc_api_p12_cert_password
   aws_existing_vpc_id                  = var.aws_existing_vpc_id
   aws_existing_sg_slo_ids              = var.aws_existing_sg_slo_ids
-  aws_existing_sg_sli_ids              = var.aws_existing_sg_sli_ids
   aws_existing_key_pair_id             = var.aws_existing_key_pair_id
   aws_existing_iam_profile_name        = var.aws_existing_iam_profile_name
   aws_security_group_rules_slo_egress  = []
   aws_security_group_rules_slo_ingress = []
-  providers                            = {
+  providers = {
     aws      = aws.default
     volterra = volterra.default
   }
 }
 
-output "f5xc_aws_cloud_ce_single_node_multi_nic_existing_vpc_new_subnet_slo_no_eip_nat_gw" {
-  value = module.f5xc_aws_cloud_ce_single_node_multi_nic_existing_vpc_new_subnet_slo_no_eip_nat_gw
+output "f5xc_aws_cloud_ce_three_node_single_nic_existing_vpc_new_subnet_slo_no_eip_3rd_party_nat_gw" {
+  value = module.f5xc_aws_cloud_ce_three_node_single_nic_existing_vpc_new_subnet_slo_no_eip_3rd_party_nat_gw
 }

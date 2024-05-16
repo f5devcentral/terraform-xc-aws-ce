@@ -26,7 +26,7 @@ module "f5xc_aws_cloud_ce_single_node_appstack_single_nic_existing_vpc_new_subne
     master = {
       master0 = {
         f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_master0
-        f5xc_aws_vpc_az_name    = local.aws_availability_zone_master0
+        aws_vpc_az_name    = local.aws_availability_zone_master0
       }
     }
     worker = {}

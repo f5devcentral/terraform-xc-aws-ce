@@ -30,29 +30,29 @@ module "f5xc_aws_cloud_ce_three_node_appstack_single_nic_new_vpc_new_subnet" {
     master = {
       master0 = {
         f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_node0
-        f5xc_aws_vpc_az_name    = local.aws_availability_zone_node0
+        aws_vpc_az_name    = local.aws_availability_zone_node0
       }
       master1 = {
         f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_node1
-        f5xc_aws_vpc_az_name    = local.aws_availability_zone_node1
+        aws_vpc_az_name    = local.aws_availability_zone_node1
       }
       master2 = {
         f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_node2
-        f5xc_aws_vpc_az_name    = local.aws_availability_zone_node2
+        aws_vpc_az_name    = local.aws_availability_zone_node2
       }
     }
     worker = {
       worker1 = {
         f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_worker0
-        f5xc_aws_vpc_az_name    = local.aws_availability_zone_worker0
+        aws_vpc_az_name    = local.aws_availability_zone_worker0
       }
       worker2 = {
         f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_worker1
-        f5xc_aws_vpc_az_name    = local.aws_availability_zone_worker1
+        aws_vpc_az_name    = local.aws_availability_zone_worker1
       }
       worker3 = {
         f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_worker2
-        f5xc_aws_vpc_az_name    = local.aws_availability_zone_worker2
+        aws_vpc_az_name    = local.aws_availability_zone_worker2
       }
     }
   }

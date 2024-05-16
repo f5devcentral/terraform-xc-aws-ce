@@ -25,7 +25,7 @@ module "f5xc_aws_cloud_ce_single_node_single_nic_new_vpc_new_subnet_custom_sg" {
   f5xc_aws_vpc_az_nodes = {
     node0 = {
       f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_node0
-      f5xc_aws_vpc_az_name    = local.aws_availability_zone
+      aws_vpc_az_name    = local.aws_availability_zone
     }
   }
   f5xc_ce_gateway_type                 = var.f5xc_ce_gateway_type
