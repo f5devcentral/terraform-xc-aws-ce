@@ -34,7 +34,7 @@ variable "f5xc_namespace" {
   default     = "system"
 }
 
-variable "f5xc_aws_region" {
+variable "aws_region" {
   description = "AWS region name"
   type        = string
 }

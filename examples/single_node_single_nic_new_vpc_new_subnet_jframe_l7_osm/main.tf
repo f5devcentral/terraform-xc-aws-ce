@@ -1,5 +1,5 @@
 locals {
-  aws_availability_zone = format("%s%s", var.f5xc_aws_region, var.aws_availability_zone)
+  aws_availability_zone = format("%s%s", var.aws_region, var.aws_availability_zone)
   custom_tags = {
     Owner         = var.owner
     f5xc-tenant   = var.f5xc_tenant
@@ -17,7 +17,6 @@ module "f5xc_aws_cloud_ce_single_node_single_nic_new_vpc_new_subnet_jframe_l7_os
   f5xc_api_url      = var.f5xc_api_url
   f5xc_api_token    = var.f5xc_api_token
   f5xc_namespace    = var.f5xc_namespace
-  f5xc_aws_region   = var.f5xc_aws_region
   f5xc_token_name   = format("%s-%s-%s", var.project_prefix, var.f5xc_cluster_name, var.project_suffix)
   f5xc_api_p12_file = var.f5xc_api_p12_file
   f5xc_cluster_name = format("%s-%s-%s", var.project_prefix, var.f5xc_cluster_name, var.project_suffix)
@@ -34,6 +33,7 @@ module "f5xc_aws_cloud_ce_single_node_single_nic_new_vpc_new_subnet_jframe_l7_os
   f5xc_api_p12_cert_password             = var.f5xc_api_p12_cert_password
   f5xc_ce_performance_enhancement_mode   = var.f5xc_ce_performance_enhancement_mode
   f5xc_enable_offline_survivability_mode = var.f5xc_enable_offline_survivability_mode
+  aws_region                             = var.aws_region
   aws_vpc_cidr_block                     = var.aws_vpc_cidr_block
   aws_security_group_rules_slo_egress    = []
   aws_security_group_rules_slo_ingress   = []

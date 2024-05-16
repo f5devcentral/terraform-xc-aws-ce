@@ -14,11 +14,11 @@ This example instantiates:
 # Usage
 
 - This example injects custom defined AWS ingress/egress security rules.
-  * Custom egress rules must allow at least:
-    * UDP 4500
-    * TCP 443
-    * UDP 123
-  * If ssh access to CE is needed ingress port TCP 22 must be added 
+    * Custom egress rules must allow at least:
+        * UDP 4500
+        * TCP 443
+        * UDP 123
+    * If ssh access to CE is needed ingress port TCP 22 must be added
 - Export AWS_ACCESS_KEY with: `export AWS_ACCESS_KEY_ID="aws access key id"`
 - Export AWS_SECRET_ACCESS_KEY with: `export AWS_SECRET_ACCESS_KEY="aws secret access key"`
 - Export F5 XC API certificate password with:
