@@ -60,7 +60,7 @@ variable "aws_existing_vpc_id" {
   type        = string
 }
 
-variable "f5xc_aws_vpc_nat_gw_subnet" {
+variable "aws_vpc_nat_gw_subnet" {
   description = "AWS NAT GW subnet prefix"
   type        = string
 }
