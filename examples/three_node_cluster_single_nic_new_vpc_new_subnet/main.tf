@@ -1,7 +1,7 @@
 locals {
-  aws_availability_zone_node0 = format("%s%s", var.f5xc_aws_region, var.f5xc_aws_availability_zone_node0)
-  aws_availability_zone_node1 = format("%s%s", var.f5xc_aws_region, var.f5xc_aws_availability_zone_node1)
-  aws_availability_zone_node2 = format("%s%s", var.f5xc_aws_region, var.f5xc_aws_availability_zone_node2)
+  aws_availability_zone_node0 = format("%s%s", var.f5xc_aws_region, var.aws_availability_zone_node0)
+  aws_availability_zone_node1 = format("%s%s", var.f5xc_aws_region, var.aws_availability_zone_node1)
+  aws_availability_zone_node2 = format("%s%s", var.f5xc_aws_region, var.aws_availability_zone_node2)
   custom_tags                 = {
     Owner         = var.owner
     f5xc-tenant   = var.f5xc_tenant

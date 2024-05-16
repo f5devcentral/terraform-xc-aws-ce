@@ -8,5 +8,5 @@ f5xc_api_url                     = "f5 xc api url e.g. https://https://playgroun
 f5xc_aws_region                  = "us-west-2"
 f5xc_cluster_name                = "aws-appstack-test"
 f5xc_api_p12_file                = "path_to_api_cert_file"
-f5xc_aws_vpc_slo_subnet_node0    = "192.168.0.0/26"
-f5xc_aws_availability_zone_node0 = "a"
+aws_vpc_slo_subnet_node0    = "192.168.0.0/26"
+aws_availability_zone_node0 = "a"

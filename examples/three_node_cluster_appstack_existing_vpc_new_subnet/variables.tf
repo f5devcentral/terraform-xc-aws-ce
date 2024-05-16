@@ -39,32 +39,32 @@ variable "f5xc_aws_region" {
   type        = string
 }
 
-variable "f5xc_aws_availability_zone_master0" {
+variable "aws_availability_zone_master0" {
   description = "AWS availability zone name"
   type        = string
 }
 
-variable "f5xc_aws_availability_zone_master1" {
+variable "aws_availability_zone_master1" {
   description = "AWS availability zone name"
   type        = string
 }
 
-variable "f5xc_aws_availability_zone_master2" {
+variable "aws_availability_zone_master2" {
   description = "AWS availability zone name"
   type        = string
 }
 
-variable "f5xc_aws_availability_zone_worker0" {
+variable "aws_availability_zone_worker0" {
   description = "AWS availability zone name"
   type        = string
 }
 
-variable "f5xc_aws_availability_zone_worker1" {
+variable "aws_availability_zone_worker1" {
   description = "AWS availability zone name"
   type        = string
 }
 
-variable "f5xc_aws_availability_zone_worker2" {
+variable "aws_availability_zone_worker2" {
   description = "AWS availability zone name"
   type        = string
 }

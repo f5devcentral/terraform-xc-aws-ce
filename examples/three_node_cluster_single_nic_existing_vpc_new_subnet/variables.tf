@@ -39,17 +39,17 @@ variable "f5xc_aws_region" {
   type        = string
 }
 
-variable "f5xc_aws_availability_zone_node0" {
+variable "aws_availability_zone_node0" {
   description = "AWS availability zone name node0"
   type        = string
 }
 
-variable "f5xc_aws_availability_zone_node1" {
+variable "aws_availability_zone_node1" {
   description = "AWS availability zone name node1"
   type        = string
 }
 
-variable "f5xc_aws_availability_zone_node2" {
+variable "aws_availability_zone_node2" {
   description = "AWS availability zone name node2"
   type        = string
 }

@@ -13,4 +13,4 @@ f5xc_api_url                  = "f5 xc api url e.g. https://https://playground.c
 f5xc_aws_region               = "us-west-2"
 f5xc_cluster_name             = "aws-ce-test"
 f5xc_api_p12_file             = "path_to_api_cert_file"
-f5xc_aws_availability_zone    = "a"
+aws_availability_zone    = "a"
