@@ -27,15 +27,15 @@ module "f5xc_aws_cloud_ce_three_node_single_nic_new_vpc_new_subnet" {
   f5xc_cluster_labels   = {}
   f5xc_aws_vpc_az_nodes = {
     node0 = {
-      f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_node0
+      aws_vpc_slo_subnet = var.aws_vpc_slo_subnet_node0
       aws_vpc_az_name    = local.aws_availability_zone_node0
     }
     node1 = {
-      f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_node1
+      aws_vpc_slo_subnet = var.aws_vpc_slo_subnet_node1
       aws_vpc_az_name    = local.aws_availability_zone_node1
     }
     node2 = {
-      f5xc_aws_vpc_slo_subnet = var.f5xc_aws_vpc_slo_subnet_node2
+      aws_vpc_slo_subnet = var.aws_vpc_slo_subnet_node2
       aws_vpc_az_name    = local.aws_availability_zone_node2
     }
   }

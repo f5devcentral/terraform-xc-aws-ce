@@ -65,7 +65,7 @@ variable "aws_vpc_cidr_block" {
   type        = string
 }
 
-variable "f5xc_aws_vpc_slo_subnet_node0" {
+variable "aws_vpc_slo_subnet_node0" {
   description = "F5 XC CE SLO interface subnet prefix"
   type        = string
 }

@@ -84,32 +84,32 @@ variable "aws_existing_vpc_id" {
   type        = string
 }
 
-variable "f5xc_aws_vpc_slo_subnet_master0" {
+variable "aws_vpc_slo_subnet_master0" {
   description = "F5 XC CE SLO interface subnet prefix"
   type        = string
 }
 
-variable "f5xc_aws_vpc_slo_subnet_master1" {
+variable "aws_vpc_slo_subnet_master1" {
   description = "F5 XC CE SLO interface subnet prefix"
   type        = string
 }
 
-variable "f5xc_aws_vpc_slo_subnet_master2" {
+variable "aws_vpc_slo_subnet_master2" {
   description = "F5 XC CE SLO interface subnet prefix"
   type        = string
 }
 
-variable "f5xc_aws_vpc_slo_subnet_worker0" {
+variable "aws_vpc_slo_subnet_worker0" {
   description = "F5 XC CE SLO interface subnet prefix"
   type        = string
 }
 
-variable "f5xc_aws_vpc_slo_subnet_worker1" {
+variable "aws_vpc_slo_subnet_worker1" {
   description = "F5 XC CE SLO interface subnet prefix"
   type        = string
 }
 
-variable "f5xc_aws_vpc_slo_subnet_worker2" {
+variable "aws_vpc_slo_subnet_worker2" {
   description = "F5 XC CE SLO interface subnet prefix"
   type        = string
 }

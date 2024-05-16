@@ -60,7 +60,7 @@ variable "aws_existing_vpc_id" {
   type        = string
 }
 
-variable "f5xc_aws_vpc_slo_subnet_master0" {
+variable "aws_vpc_slo_subnet_master0" {
   description = "F5 XC CE SLO interface subnet prefix"
   type        = string
 }
