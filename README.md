@@ -55,11 +55,11 @@ Description of available input variables. Used input variables will change per t
 |                               |                                                                                                                    |
 | f5xc_tenant                   | Full f5 xc tenant name e.g. playground-abcdefg                                                                     |
 | f5xc_api_url                  | F5 XC API URL e.g. https://playground.console.ves.volterra.io/api                                                  |
-| f5xc_aws_region               | AWS region to deploy site in e.g. "us-west-2"                                                                      |
 | f5xc_cluster_name             | F5 XC cluster name e.g. "aws-ce-test"                                                                              |
 | f5xc_api_p12_file             | Path to F5 XC exported API cert file                                                                               |
 | f5xc_aws_availability_zone    | AWS availability zone to deploy object in                                                                          |
 |                               |                                                                                                                    |
+| aws_region                    | AWS region to deploy site in e.g. "us-west-2"                                                                      |
 | aws_existing_vpc_id           | Id of existing AWS VPC e.g. vpc-089de438436174ab7                                                                  |
 | aws_existing_sg_slo_ids       | SLO comma separated list of security group id strings e.g. ["id-1", "id-2", "id-3"]. Leave empty to omit injection |
 | aws_existing_sg_sli_ids       | SLI comma separated list of security group id strings e.g. ["id-1", "id-2", "id-3"]. Leave empty to omit injection |
