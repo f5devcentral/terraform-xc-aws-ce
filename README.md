@@ -6,7 +6,7 @@ Terraform templates to create F5XC AWS cloud CE (manual mode deployment).
 
 | Name                                                                                     | Version   |
 |------------------------------------------------------------------------------------------|-----------|
-| <a name="requirement_terraform"></a> [terraform](https://github.com/hashicorp/terraform) | \>= 1.3.0 |
+| <a name="requirement_terraform"></a> [terraform](https://github.com/hashicorp/terraform) | \>= 1.7.0 |
 | <a name="requirement_curl"></a> [curl](https://curl.se/)                                 | \>= 1.7   |
 | <a name="requirement_git"></a> [git](https://git-scm.com/)                               | \>= 8.0   |
 | <a name="requirement_jq"></a> [jq](https://jqlang.github.io/jq/)                         | latest    |
