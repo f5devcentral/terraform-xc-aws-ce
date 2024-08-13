@@ -99,6 +99,7 @@ Description of available input variables. Used input variables will change per t
 |---------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | Single Node with offline survivability mode and l3 performance enhancement mode | [Description](examples/single_node_single_nic_new_vpc_new_subnet_jframe_l7_osm/README.md) |
 | Single Node single NIC new VPC and subnet with custom security group            | [Description](examples/single_node_single_nic_new_vpc_new_subnet_custom_sg/README.md)     |
+| Single Node single NIC new VPC and subnet with proxy                            | [Description](examples/single_node_single_nic_new_vpc_new_subnet_proxy/README.md)         |
 
 ## ClickOps
 

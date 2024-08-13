@@ -1,4 +1,4 @@
-# Example Single node single NIC new VPC new subnet
+# Example Single node single NIC new VPC new subnet and proxy set
 
 This example instantiates:
 
@@ -10,12 +10,9 @@ This example instantiates:
 - AWS Internet Gateway
 - Assign AWS EIP to SLO
 
-## Topology
-
-![Single Node Single NIC new VPC new subnet](../../images/aws_1n.png)
-
 # Usage
 
+- This example uses http(s) proxy for control plane communication. A proxy must be available upfront terraform apply
 - Export AWS_ACCESS_KEY with: `export AWS_ACCESS_KEY_ID="aws access key id"`
 - Export AWS_SECRET_ACCESS_KEY with: `export AWS_SECRET_ACCESS_KEY="aws secret access key"`
 - Export F5 XC API certificate password with:

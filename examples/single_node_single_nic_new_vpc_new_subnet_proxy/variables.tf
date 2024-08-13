@@ -40,6 +40,14 @@ variable "f5xc_namespace" {
   default     = "system"
 }
 
+variable "f5xc_ce_http_proxy" {
+  type    = string
+}
+
+variable "f5xc_ce_https_proxy" {
+  type    = string
+}
+
 variable "aws_region" {
   description = "AWS region name"
   type        = string
