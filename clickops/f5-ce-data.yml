@@ -1,12 +1,13 @@
 #cloud-config
-#Only value that needs to be inserted is the token. Insert as is without parenthesis
+#Only values to be inserted are token and cluster name. Insert as is without parenthesis
 write_files:
-#ves
 - path: /etc/hosts
   content: |
-    # IPv4 and IPv6 localhost aliases 
-    127.0.0.1 localhost
-    127.0.0.1 vip
+    # IPv4 and IPv6 localhost aliases
+    127.0.0.1         localhost
+    ::1               localhost
+    127.0.1.1         vip
+    169.254.169.254   metadata.google.internal
   permissions: 0644
   owner: root
 - path: /etc/vpm/config.yaml
@@ -15,10 +16,12 @@ write_files:
   content: |
     Vpm:
       ClusterType: ce
+      ClusterName: #### TO BE REPLACED BY THE F5XC SECURE MESH SITE NAME ####
       Token: #### TO BE REPLACED BY F5XC API TOKEN ####
       MauricePrivateEndpoint: https://register-tls.ves.volterra.io
       MauriceEndpoint: https://register.ves.volterra.io
-      CertifiedHardwareEndpoint: https://vesio.blob.core.windows.net/releases/certified-hardware/aws.yml
+      CertifiedHardwareEndpoint: https://vesio.blob.core.windows.net/releases/certified-hardware/gcp.yml
     Kubernetes:
       EtcdUseTLS: True
       Server: vip
+      CloudProvider: disabled
