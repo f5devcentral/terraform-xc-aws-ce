@@ -21,6 +21,7 @@ module "f5xc_aws_cloud_ce_single_node_single_nic_new_vpc_new_subnet" {
   f5xc_cluster_name = format("%s-%s-%s", var.project_prefix, var.f5xc_cluster_name, var.project_suffix)
   f5xc_api_p12_file = var.f5xc_api_p12_file
   f5xc_cluster_labels = {}
+
   f5xc_aws_vpc_az_nodes = {
     node0 = {
       aws_vpc_slo_subnet = var.aws_vpc_slo_subnet_node0
