@@ -1,10 +1,10 @@
 terraform {
-  required_version = ">= 1.3.0"
+  required_version = ">= 1.7.0"
 
   required_providers {
     volterra = {
       source  = "volterraedge/volterra"
-      version = "= 0.11.32"
+      version = "= 0.11.38"
     }
     aws = {
       source  = "hashicorp/aws"
