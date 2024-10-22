@@ -1,6 +1,6 @@
 owner                    = "owner_email_address"
 project_prefix           = "f5xc"
-project_suffix           = "93"
+project_suffix           = "73"
 #ssh_public_key_file      = "path to ssh public key file"
 #f5xc_tenant              = "full f5 xc tenant name e.g. playground-abcdefg"
 #f5xc_api_url             = "f5 xc api url e.g. https://https://playground.console.ves.volterra.io/api"

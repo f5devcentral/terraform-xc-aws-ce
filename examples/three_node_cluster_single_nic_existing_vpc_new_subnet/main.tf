@@ -40,6 +40,7 @@ module "f5xc_aws_cloud_ce_three_node_single_nic_new_vpc_new_subnet" {
   }
   f5xc_ce_gateway_type                 = var.f5xc_ce_gateway_type
   f5xc_cluster_latitude                = var.f5xc_cluster_latitude
+  f5xc_sms_provider_name               = "aws"
   f5xc_cluster_longitude               = var.f5xc_cluster_longitude
   f5xc_api_p12_cert_password           = var.f5xc_api_p12_cert_password
   aws_region                           = var.aws_region
@@ -49,6 +50,7 @@ module "f5xc_aws_cloud_ce_three_node_single_nic_new_vpc_new_subnet" {
   ssh_public_key                       = file(var.ssh_public_key_file)
   providers = {
     aws      = aws.default
+    restful  = restful.default
     volterra = volterra.default
   }
 }

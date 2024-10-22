@@ -21,7 +21,6 @@ module "f5xc_aws_cloud_ce_single_node_single_nic_new_vpc_new_subnet" {
   f5xc_cluster_name = format("%s-%s-%s", var.project_prefix, var.f5xc_cluster_name, var.project_suffix)
   f5xc_api_p12_file = var.f5xc_api_p12_file
   f5xc_cluster_labels = {}
-
   f5xc_aws_vpc_az_nodes = {
     node0 = {
       aws_vpc_slo_subnet = var.aws_vpc_slo_subnet_node0
@@ -30,6 +29,7 @@ module "f5xc_aws_cloud_ce_single_node_single_nic_new_vpc_new_subnet" {
   }
   f5xc_ce_gateway_type                 = var.f5xc_ce_gateway_type
   f5xc_cluster_latitude                = var.f5xc_cluster_latitude
+  f5xc_sms_provider_name               = "aws"
   f5xc_cluster_longitude               = var.f5xc_cluster_longitude
   f5xc_api_p12_cert_password           = var.f5xc_api_p12_cert_password
   aws_region                           = var.aws_region
@@ -39,6 +39,7 @@ module "f5xc_aws_cloud_ce_single_node_single_nic_new_vpc_new_subnet" {
   ssh_public_key                       = file(var.ssh_public_key_file)
   providers = {
     aws      = aws.default
+    restful  = restful.default
     volterra = volterra.default
   }
 }

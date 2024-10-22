@@ -10,6 +10,12 @@ terraform {
       source  = "hashicorp/aws"
       version = ">= 4.51.0"
     }
+
+    restful = {
+      source  = "magodo/restful"
+      version = ">= 0.16.1"
+    }
+
     local = ">= 2.2.3"
     null  = ">= 3.1.1"
   }

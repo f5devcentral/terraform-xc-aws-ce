@@ -34,7 +34,6 @@ module "f5xc_aws_cloud_ce_single_node_appstack_single_nic_existing_vpc_new_subne
   f5xc_cluster_latitude                = var.f5xc_cluster_latitude
   f5xc_cluster_longitude               = var.f5xc_cluster_longitude
   f5xc_api_p12_cert_password           = var.f5xc_api_p12_cert_password
-  f5xc_site_type_is_secure_mesh_site   = false
   aws_region                           = var.aws_region
   aws_existing_vpc_id                  = var.aws_existing_vpc_id
   aws_instance_type_master             = "t3.xlarge"
