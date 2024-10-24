@@ -29,13 +29,14 @@ module "f5xc_aws_cloud_ce_single_node_single_nic_new_vpc_new_subnet" {
       aws_vpc_az_name    = local.aws_availability_zone
     }
   }
-  f5xc_ce_gateway_type       = var.f5xc_ce_gateway_type
-  f5xc_cluster_latitude      = var.f5xc_cluster_latitude
-  f5xc_sms_provider_name     = "aws"
-  f5xc_cluster_longitude     = var.f5xc_cluster_longitude
-  f5xc_api_p12_cert_password = var.f5xc_api_p12_cert_password
-  aws_region                 = var.aws_region
-  aws_vpc_cidr_block         = var.aws_vpc_cidr_block
+  f5xc_ce_gateway_type          = var.f5xc_ce_gateway_type
+  f5xc_cluster_latitude         = var.f5xc_cluster_latitude
+  f5xc_sms_provider_name        = "aws"
+  f5xc_cluster_longitude        = var.f5xc_cluster_longitude
+  f5xc_api_p12_cert_password    = var.f5xc_api_p12_cert_password
+  f5xc_secure_mesh_site_version = var.f5xc_secure_mesh_site_version
+  aws_region                    = var.aws_region
+  aws_vpc_cidr_block            = var.aws_vpc_cidr_block
   aws_security_group_rules_slo_egress = []
   aws_security_group_rules_slo_ingress = []
   ssh_public_key = file(var.ssh_public_key_file)

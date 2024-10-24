@@ -1,3 +1,8 @@
+variable "owner" {
+  description = "AWS tag owner email address"
+  type        = string
+}
+
 variable "project_prefix" {
   type        = string
   description = "prefix string put in front of string"
@@ -50,11 +55,6 @@ variable "f5xc_cluster_name" {
   type        = string
 }
 
-variable "owner" {
-  description = "AWS tag owner email address"
-  type        = string
-}
-
 variable "aws_existing_vpc_id" {
   description = "The ID of an already existing AWS VPC"
   type        = string
@@ -78,6 +78,16 @@ variable "f5xc_cluster_longitude" {
   default     = 40.730610
 }
 
+variable "f5xc_api_p12_cert_password" {
+  description = "F5 XC API certificate file password"
+  type        = string
+}
+
+variable "f5xc_secure_mesh_site_version" {
+  type    = number
+  default = 1
+}
+
 variable "aws_slo_subnet_id_node0" {
   description = "F5 XC SLO - AWS Subnet ID"
   type        = string
@@ -85,11 +95,6 @@ variable "aws_slo_subnet_id_node0" {
 
 variable "aws_sli_subnet_id_node0" {
   description = "F5 XC SLI - AWS Subnet ID"
-  type        = string
-}
-
-variable "f5xc_api_p12_cert_password" {
-  description = "F5 XC API certificate file password"
   type        = string
 }
 

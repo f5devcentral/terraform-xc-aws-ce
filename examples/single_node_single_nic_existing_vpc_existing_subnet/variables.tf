@@ -88,6 +88,11 @@ variable "aws_slo_subnet_id_node0" {
   type        = string
 }
 
+variable "f5xc_secure_mesh_site_version" {
+  type    = number
+  default = 1
+}
+
 variable "ssh_public_key_file" {
   description = "path to ssh public key file"
   type        = string

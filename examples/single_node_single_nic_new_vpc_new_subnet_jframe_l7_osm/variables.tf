@@ -101,6 +101,11 @@ variable "f5xc_enable_offline_survivability_mode" {
   type = bool
 }
 
+variable "f5xc_secure_mesh_site_version" {
+  type    = number
+  default = 1
+}
+
 variable "ssh_public_key_file" {
   description = "path to ssh public key file"
   type        = string

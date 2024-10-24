@@ -78,6 +78,11 @@ variable "f5xc_api_p12_cert_password" {
   type        = string
 }
 
+variable "f5xc_secure_mesh_site_version" {
+  type    = number
+  default = 1
+}
+
 variable "aws_existing_vpc_id" {
   description = "The ID of an already existing AWS VPC"
   type        = string

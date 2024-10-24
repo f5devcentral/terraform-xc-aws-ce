@@ -55,6 +55,11 @@ variable "f5xc_cluster_name" {
   type        = string
 }
 
+variable "f5xc_secure_mesh_site_version" {
+  type    = number
+  default = 1
+}
+
 variable "owner" {
   description = "AWS tag owner email address"
   type        = string

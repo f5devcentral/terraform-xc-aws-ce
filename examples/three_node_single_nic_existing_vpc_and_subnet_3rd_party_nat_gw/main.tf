@@ -51,6 +51,7 @@ module "f5xc_aws_cloud_ce_three_node_single_nic_existing_vpc_new_subnet_slo_no_e
   f5xc_sms_provider_name               = "aws"
   f5xc_cluster_longitude               = var.f5xc_cluster_longitude
   f5xc_api_p12_cert_password           = var.f5xc_api_p12_cert_password
+  f5xc_secure_mesh_site_version        = var.f5xc_secure_mesh_site_version
   aws_region                           = var.aws_region
   aws_existing_vpc_id                  = var.aws_existing_vpc_id
   aws_existing_sg_slo_ids              = var.aws_existing_sg_slo_ids

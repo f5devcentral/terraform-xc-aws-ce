@@ -83,6 +83,11 @@ variable "aws_existing_vpc_id" {
   type        = string
 }
 
+variable "f5xc_secure_mesh_site_version" {
+  type    = number
+  default = 1
+}
+
 variable "aws_slo_subnet_id_node0" {
   description = "already existing aws slo subnet id"
   type        = string
